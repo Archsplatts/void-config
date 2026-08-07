@@ -72,6 +72,7 @@ APPS_PKGS=(
 	"timeshift"
 	"tuxguitar"
 	"xarchiver"
+	"xfce4-whiskermenu-plugin"
 )
 
 sudo xbps-install -Sy "${APPS_PKGS[@]}"
