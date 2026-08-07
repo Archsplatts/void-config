@@ -1,0 +1,112 @@
+#!/bin/bash
+
+set -euo pipefail
+
+VERT='\033[0;32m'
+JAUNE='\033[1;33m'
+NC='\033[0m'
+
+echo -e "${VERT}                                   ▄▄                    ${NC}"
+echo -e "${VERT}                  █▄                ██       █▄  █▄      ${NC}"
+echo -e "${VERT}       ▄          ██                ██      ▄██▄▄██▄     ${NC}"
+echo -e "${VERT} ▄▀▀█▄ ████▄▄███▀ ████▄ ▄██▀█ ████▄ ██ ▄▀▀█▄ ██  ██ ▄██▀█${NC}"
+echo -e "${VERT} ▄█▀██ ██   ██    ██ ██ ▀███▄ ██ ██ ██ ▄█▀██ ██  ██ ▀███▄${NC}"
+echo -e "${VERT}▄▀█▄██▄█▀  ▄▀███▄▄██ ███▄▄██▀▄████▀▄██▄▀█▄██▄██ ▄███▄▄██▀${NC}"
+echo -e "${VERT}                              ██                         ${NC}"
+echo -e "${VERT}                              ▀                          ${NC}"
+
+echo -e "${JAUNE}Bienvenue dans le script de configuration Archsplatts Void Linux!${NC}\n"
+
+if [ -t 0 ]; then
+    read -p "Appuyez sur Entrée pour continuer... "
+fi   
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[1/6] Mise à jour du système${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo xbps-install -u xbps
+sudo xbps-install -Syu
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[2/6] Outils de terminal & shell${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+TERM_PKGS=(
+	"bat"
+	"btop"
+	"calcurse"
+	"dust"
+	"eza"
+	"fastfetch"
+	"micro"
+	"starship"
+	"termdown"
+	"trash-cli"
+	"unzip"
+	"yazi"
+	"zip"
+	"zsh"
+	"zsh-autosuggestions"
+	"zsh-syntax-highlighting"
+)
+
+sudo xbps-install -Sy "${TERM_PKGS[@]}"
+
+sudo chsh -s /bin/zsh $USER
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[3/6] Installation des applications${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+APPS_PKGS=(
+	"evince"
+	"galculator"
+	"gnome-disk-utility"
+	"impression"
+	"lollypop"
+	"mpv"
+	"rofi"
+	"qbittorrent" 
+	"thunderbird"
+	"timeshift"
+	"tuxguitar"
+	"xarchiver"
+)
+
+sudo xbps-install -Sy "${APPS_PKGS[@]}"
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[4/6] Activation du pare-feu${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo xbps-install -Sy ufw
+sudo ln -s /etc/sv/ufw /var/service
+sudo ufw enable 
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[5/6] Copie des dotfiles${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+mkdir -p ~/Images/Wallpapers
+mkdir -p ~/.local/share/xfce4/terminal/colorschemes
+cp ~/void-config/catppuccin-mocha.theme ~/.local/share/xfce4/terminal/colorschemes
+cp -r ~/void-config/config/* ~/.config
+cp  ~/void-config/sunken-tower.jpg ~/Images/Wallpapers
+cp ~/void-config/zshrc ~/.zshrc
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[6/6] Catppuccin papirus folders${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo xbps-install -Sy papirus-icon-theme papirus-folders
+git clone https://github.com/catppuccin/papirus-folders.git
+cd papirus-folders
+sudo cp -r src/* /usr/share/icons/Papirus
+papirus-folders -C cat-mocha-teal
+
+echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
+echo -e "${VERT}║  Installation terminée avec succès !   ║${NC}"
+echo -e "${VERT}╚════════════════════════════════════════╝${NC}\n"
+
+echo -e "${JAUNE}⚠ Veuillez redémarrer votre système pour appliquer tous les changements.${NC}\n"
