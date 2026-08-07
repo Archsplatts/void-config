@@ -92,7 +92,7 @@ mkdir -p ~/Images/Wallpapers
 mkdir -p ~/.local/share/xfce4/terminal/colorschemes
 cp ~/void-config/catppuccin-mocha.theme ~/.local/share/xfce4/terminal/colorschemes
 cp -r ~/void-config/config/* ~/.config
-cp  ~/void-config/sunken-tower.jpg ~/Images/Wallpapers
+cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
