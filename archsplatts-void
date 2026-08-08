@@ -136,7 +136,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 mkdir -p ~/Images/Wallpapers
 cp -r ~/void-config/config/* ~/.config
-cp  ~/void-config/sunken-tower.jpg ~/Images/Wallpapers
+cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
 chmod u+x ~/.config/rofi/scripts/*
 
