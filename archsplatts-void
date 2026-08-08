@@ -68,6 +68,7 @@ APPS_PKGS=(
 	"impression" 
 	"lollypop" 
 	"mpv" 
+	"network-manager-applet"
 	"pavucontrol" 
 	"qbittorrent" 
 	"ristretto" 
