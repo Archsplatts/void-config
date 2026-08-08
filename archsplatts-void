@@ -139,6 +139,7 @@ cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
 chmod u+x ~/.config/rofi/scripts/*
+chmod u+x ~/.config/sway/scripts/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
