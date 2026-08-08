@@ -7,7 +7,7 @@ set $texteditor geany
 
 # Output configuration
 output HDMI-A-1 resolution 1920x1080 position 0,0
-output * bg ~/Images/Wallpapers/koi.jpg fill
+output * bg ~/Images/Wallpapers/sunken-tower.png fill
 
 # Input configuration
 input type:keyboard { 
