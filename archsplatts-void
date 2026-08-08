@@ -69,6 +69,7 @@ APPS_PKGS=(
 	"lollypop" 
 	"mpv" 
 	"network-manager-applet"
+	"nwg-look"
 	"pavucontrol" 
 	"qbittorrent" 
 	"ristretto" 
