@@ -1,0 +1,8 @@
+#!/bin/bash
+
+$HOME/Programmes/Soundshed/soundshed-guitar/soundshed-guitar &
+
+sleep 0.5
+
+rhythmbox &
+
