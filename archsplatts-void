@@ -19,86 +19,128 @@ echo -e "${JAUNE}Bienvenue dans le script de configuration Archsplatts Void Linu
 
 if [ -t 0 ]; then
     read -p "Appuyez sur Entrée pour continuer... "
-fi   
+fi 
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[1/6] Mise à jour du système${NC}"
+echo -e "${JAUNE}[1/8] Mise à jour du système${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo xbps-install -u xbps
 sudo xbps-install -Syu
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[2/6] Outils de terminal & shell${NC}"
+echo -e "${JAUNE}[2/8] Paquets essentiels${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-TERM_PKGS=(
-	"bat"
-	"btop"
-	"calcurse"
-	"dust"
-	"eza"
-	"fastfetch"
-	"micro"
-	"starship"
-	"termdown"
-	"trash-cli"
-	"unzip"
-	"yazi"
-	"zip"
-	"zsh"
-	"zsh-autosuggestions"
-	"zsh-syntax-highlighting"
+ESSENTIALS_PKGS=(
+	"autotiling" 
+	"chrony" 
+	"cliphist" 
+	"dbus" 
+	"elogind" 
+	"foot" 
+	"gvfs" 
+	"mako"
+	"mesa-dri" 
+	"NetworkManager"
+	"rofi"
+	"sway" 
+	"swaybg"
+	"swayidle"
+	"swaylock" 
+	"Thunar" 
+	"thunar-archive-plugin" 
+	"thunar-volman" 
+	"ufw" 
+	"wl-clipboard" 
+	"xorg-server-xwayland"
 )
 
-sudo xbps-install -Sy "${TERM_PKGS[@]}"
-
-sudo chsh -s /bin/zsh $USER
+sudo xbps-install -Sy "${ESSENTIALS_PKGS[@]}"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[3/6] Installation des applications${NC}"
+echo -e "${JAUNE}[3/8] Installation des applications${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 APPS_PKGS=(
-	"evince"
-	"galculator"
-	"gnome-disk-utility"
-	"impression"
-	"lollypop"
-	"mpv"
-	"rofi"
-	"qbittorrent"
-	"thunar-archive-plugin"
-	"thunderbird"
-	"timeshift"
-	"tuxguitar"
-	"xarchiver"
-	"xfce4-whiskermenu-plugin"
+	"firefox" 
+	"galculator" 
+	"gnome-disk-utility" 
+	"impression" 
+	"lollypop" 
+	"mpv" 
+	"pavucontrol" 
+	"qbittorrent" 
+	"ristretto" 
+	"thunderbird" 
+	"timeshift" 
+	"zathura"
+	"zathura-pdf-mupdf"	
 )
+
 
 sudo xbps-install -Sy "${APPS_PKGS[@]}"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[4/6] Activation du pare-feu${NC}"
+echo -e "${JAUNE}[4/8] Installation des utilitaires${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo xbps-install -Sy ufw
-sudo ln -s /etc/sv/ufw /var/service
-sudo ufw enable 
+UTILS_PKGS=(
+	"bat" 
+	"btop" 
+	"calcurse" 
+	"eza" 
+	"fastfetch" 
+	"git" 
+	"micro" 
+	"noto-fonts-ttf"
+	"noto-fonts-emoji"
+	"papirus-folders" 
+	"papirus-icon-theme" 
+   	"starship" 
+	"termdown" 
+	"terminus-font" 
+	"unzip" 
+	"xz" 
+	"yazi" 
+	"zip" 
+	"zsh" 
+	"zsh-autosuggestions" 
+	"zsh-syntax-highlighting"	
+)
+
+sudo xbps-install -Sy "${UTILS_PKGS[@]}"
+sudo chsh -s /bin/zsh $USER
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[5/6] Copie des dotfiles${NC}"
+echo -e "${JAUNE}[5/8] Configuration de pipewire${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo xbps-install -Sy pipewire wireplumber
+sudo mkdir -p /etc/alsa/conf.d
+sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[6/8] Activation des services${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo ln -s /etc/sv/chronyd /var/service
+sudo ln -s /etc/sv/dbus /var/service
+sudo ln -s /etc/sv/elogind /var/service
+sudo ln -s /etc/sv/NetworkManager /var/service
+sudo ufw enable
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 mkdir -p ~/Images/Wallpapers
-mkdir -p ~/.local/share/xfce4/terminal/colorschemes
-cp ~/void-config/catppuccin-mocha.theme ~/.local/share/xfce4/terminal/colorschemes
 cp -r ~/void-config/config/* ~/.config
-cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
+cp  ~/void-config/sunken-tower.jpg ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[6/6] Catppuccin papirus folders${NC}"
+echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo xbps-install -Sy papirus-icon-theme papirus-folders
