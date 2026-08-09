@@ -122,6 +122,10 @@ sudo xbps-install -Sy pipewire wireplumber
 sudo mkdir -p /etc/alsa/conf.d
 sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+mkdir -p ~/.config/autostart
+ln -s /usr/share/applications/pipewire.desktop ~/.config/autostart/
+ln -s /usr/share/applications/pipewire-pulse.desktop ~/.config/autostart/
+ln -s /usr/share/applications/wireplumber.desktop ~/.config/autostart/   
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[6/8] Activation des services${NC}"
