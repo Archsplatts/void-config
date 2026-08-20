@@ -137,6 +137,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
+mkdir -p ~/.config
 mkdir -p ~/Images/Wallpapers
 mkdir -p $HOME/.local/share/themes
 cp -r ~/void-config/config/* ~/.config
