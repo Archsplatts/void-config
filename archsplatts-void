@@ -142,9 +142,11 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 mkdir -p ~/.config
 mkdir -p ~/Images/Wallpapers
 mkdir -p $HOME/.local/share/themes
+mkdir -p $HOME/.local/share/applications
 cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
+cp -r ~/void-config/applications/* ~/.local/share/applications
 xdg-user-dirs-update
 chmod u+x ~/.config/rofi/scripts/*
 chmod u+x ~/.config/sway/scripts/*
