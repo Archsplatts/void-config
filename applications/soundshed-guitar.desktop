@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=$HOME/Programmes/Soundshed/soundshed-guitar/soundshed-guitar
+Icon=$HOME/Programmes/Soundshed/soundshed-guitar/resources/ui/images/icon.png
+Terminal=false
+Name=Soundshed Guitar
