@@ -50,8 +50,10 @@ ESSENTIALS_PKGS=(
 	"Thunar" 
 	"thunar-archive-plugin" 
 	"thunar-volman" 
-	"ufw" 
-	"wl-clipboard" 
+	"ufw"
+	"Waybar"
+	"wl-clipboard"
+	"xdg-user-dirs"
 	"xorg-server-xwayland"
 )
 
@@ -143,6 +145,7 @@ mkdir -p $HOME/.local/share/themes
 cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
+xdg-user-dirs-update
 chmod u+x ~/.config/rofi/scripts/*
 chmod u+x ~/.config/sway/scripts/*
 chmod u+x ~/.config/waybar/scripts/*
