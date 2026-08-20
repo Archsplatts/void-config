@@ -10,6 +10,12 @@ alias info="xbps-query -R"
 alias search="xbps-query -Rs"
 alias update="sudo xbps-install -Syu"
 
+## Flatpak
+alias fpi="flatpak install"
+alias fpd="flatpak uninstall"
+alias fps="flatpak search"
+alias fpu="flatpak update"
+
 ##   Utilitaires
 alias c="clear"
 alias cdt="cd $HOME/Téléchargements"
