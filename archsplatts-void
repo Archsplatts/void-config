@@ -39,6 +39,8 @@ ESSENTIALS_PKGS=(
 	"elogind" 
 	"foot" 
 	"gvfs" 
+	"libwebkit2gtk41"
+	"libwebkit2gtk41-devel"
 	"mako"
 	"mesa-dri" 
 	"NetworkManager"
