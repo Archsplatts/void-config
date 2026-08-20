@@ -2,8 +2,8 @@ set $mod Mod4
 set $term foot
 set $menu rofi -modes "drun,run" -show drun -config ~/.config/rofi/applications-menu.rasi
 set $filemanager thunar
-set $web brave-origin
-set $texteditor geany
+set $web firefox
+set $texteditor foot -e micro
 
 # Output configuration
 output HDMI-A-1 resolution 1920x1080 position 0,0
