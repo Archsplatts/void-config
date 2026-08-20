@@ -18,23 +18,7 @@ input type:keyboard {
 # Bar
 
 bar { 
- 	position top
- 	status_command while date +'%d %B %Y - %H:%M'; do sleep 1; done
- 	height 30
- 	font pango:Ubuntu Mono Nerd Font Medium 12
- 	separator_symbol " "
- 	tray_padding 8
-
- 	colors {
- 		statusline #cdd6f4
- 		background #1e1e2e
- 		separator #313244
- 		focused_workspace #94e2d5 #1e1e2e #cdd6f4
- 		active_workspace #94e2d5 #1e1e2e #cdd6f4
- 		inactive_workspace #a6adc8 #1e1e2e #313244
- 		urgent_workspace #f38ba8 #1e1e2e #cdd6f4
- 		binding_mode #f38ba8 #1e1e2e #cdd6f4
- 	}
+	swaybar_command waybar
 }
 
 include /etc/sway/config.d/*
