@@ -142,7 +142,7 @@ sudo ln -s /etc/sv/chronyd /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/elogind /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
-sudo ufw enable
+sudo ln -s /etc/sv/ufw /var/service
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
