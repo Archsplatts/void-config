@@ -26,6 +26,7 @@ alias ls="eza --icons -1 --group-directories-first"
 alias pfc="papirus-folders -C"
 alias pfl="papirus-folders -l"
 alias rm="trash -v"
+alias sv="ls /var/service"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 ## History file for zsh
