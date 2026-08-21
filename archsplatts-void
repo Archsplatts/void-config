@@ -57,6 +57,7 @@ ESSENTIALS_PKGS=(
 	"Waybar"
 	"wl-clipboard"
 	"xdg-user-dirs"
+	"xfce-polkit"
 	"xorg-server-xwayland"
 )
 
