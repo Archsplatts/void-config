@@ -94,7 +94,8 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 UTILS_PKGS=(
 	"bat" 
 	"btop" 
-	"calcurse" 
+	"calcurse"
+	"dust"
 	"eza" 
 	"fastfetch" 
 	"git" 
