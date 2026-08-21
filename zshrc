@@ -27,6 +27,7 @@ alias pfc="papirus-folders -C"
 alias pfl="papirus-folders -l"
 alias rm="trash -v"
 alias sv="ls /var/service"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 ## History file for zsh
