@@ -44,6 +44,7 @@ ESSENTIALS_PKGS=(
 	"libwebkit2gtk41-devel"
 	"mako"
 	"mesa-dri" 
+	"mesa-vulkan-radeon"
 	"NetworkManager"
 	"rofi"
 	"sway" 
