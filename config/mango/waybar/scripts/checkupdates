@@ -1,0 +1,17 @@
+#!/bin/bash
+
+official_updates=$(xbps-install -un 2>/dev/null | wc -l)
+
+total_updates=$official_updates
+
+if [ "$total_updates" -gt 0 ]; then
+
+  notify-send -u normal \
+        --icon=update-notifier \
+        "Mises à jour disponibles" \
+        "$total_updates paquets à mettre à jour"
+        
+    echo "{\"text\": \"$total_updates\", \"alt\": \"has-updates\", \"class\": \"has-updates\", \"tooltip\": \"Mises à jour : $total_updates\"}"
+else
+    echo "{\"text\": \"\", \"alt\": \"updated\", \"class\": \"updated\", \"tooltip\": \"Système à jour\"}"
+fi   
