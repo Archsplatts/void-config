@@ -16,7 +16,7 @@ if [[ -n "$selection" ]]; then
    			;;
    		"BraveSearch")
    		   	brave-origin-nightly https://search.brave.com 
-   		   	 ;;  
+   		   	;;  
 		"Movix")
 			firefox https://movix.bet
 			;;
@@ -28,6 +28,6 @@ if [[ -n "$selection" ]]; then
             ;;
         "Youtube")                    
             brave-origin-nightly https://www.youtube.com
-             ;; 
+            ;; 
     esac
 fi   
