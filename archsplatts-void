@@ -65,6 +65,7 @@ ESSENTIALS_PKGS=(
 	"xdg-desktop-portal-wlr"
 	"xdg-user-dirs"
 	"xfce-polkit"
+	"xmirror"
 	"xorg-server-xwayland"
 )
 
