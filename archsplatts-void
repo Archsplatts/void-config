@@ -116,6 +116,7 @@ UTILS_PKGS=(
    	"starship" 
 	"termdown" 
 	"terminus-font" 
+	"trash-cli"
 	"unzip"
 	"xarchiver"
 	"xz" 
