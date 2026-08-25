@@ -9,8 +9,7 @@
         	"has-updates": "\u00A0󰊠\u00A0\u00A0",
         	"updated": "\u00A0󰊠\u00A0\u00A0"
     },
-    	"exec": "$HOME/.config/mango/waybar/scripts/checkupdates",
-		"on-click": "foot -e pacseek",
-    	"on-click-right": "$HOME/.config/waybar/scripts/checkupdates; pkill -SIGRTMIN+1 waybar"
+    	"exec": "/home/USER/.config/mango/waybar/scripts/checkupdates",
+    	"on-click": "/home/USER/.config/waybar/scripts/checkupdates; pkill -SIGRTMIN+1 waybar"
 	}
 }	
