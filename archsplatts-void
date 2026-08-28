@@ -157,6 +157,7 @@ sudo ln -s /etc/sv/nanoklogd /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
 sudo ln -s /etc/sv/socklog-unix /var/service
 sudo ln -s /etc/sv/ufw /var/service
+sudo ufw enable
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
