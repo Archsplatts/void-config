@@ -50,6 +50,7 @@ ESSENTIALS_PKGS=(
 	"mesa-vulkan-radeon"
 	"NetworkManager"
 	"qt5ct"
+	"qt5-styleplugins"
 	"qt6ct"
 	"rofi"
 	"slurp"
