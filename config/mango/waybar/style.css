@@ -11,61 +11,6 @@ window#waybar {
     background: rgba(30,30,46,0.9);
 }
 
-tooltip {
-    background: @base;
-    border: 1px solid @surface1;
-    border-radius: 6px;
-}
-
-tooltip label {
-    color: @text;
-    margin: 4px;
-    padding: 4px;
-}
-
-label:focus {
-    background: @mantle;
-}
-
-#tray,#custom-updates,#custom-menu,#custom-circle3,#custom-circle4,#custom-circle5,#custom-circle6,#taskbar,
-#clock,#pulseaudio,#disk,#custom-system-infos,#network,#custom-power,#custom-media {
-	margin: 5px 0;
-}
-
-#pulseaudio,#clock,#disk {
-	padding: 0 10px;
-}
-
-#tray {
-	background: @surface0;
-	padding: 0 8px;
-}
-
-#custom-menu {
-	background: @teal;
-	color: @base;
-	font-size: 18px;
-	padding: 0 7px;
-}
-
-#custom-circle3 {
-	background: @surface0;
-	color: @surface1;	
-	font-size: 22px;
-}
-
-#custom-circle4,#custom-circle5 {
-	background: @surface1;
-	color: @teal;
-	font-size: 22px;
-}
-
-#custom-circle6 {
-	background: @surface0;
-	color: @surface1;
-	font-size: 22px;
-}
-
 #workspaces {
 	background: @surface0;
 	border-radius: 0 20px 20px 0;
@@ -91,6 +36,89 @@ label:focus {
 #workspaces button.urgent {
     background: transparent;
     color: @red;
+}
+
+#custom-updates {
+	background: @surface1;
+	border-radius: 20px 0px 0 20px;
+}
+
+#custom-updates.has-updates {
+	color: @green;
+}
+
+#custom-circle3 {
+	background: @surface1;
+	color: @surface2;	
+	font-size: 22px;
+}
+
+#custom-circle4,#custom-circle5 {
+	background: @surface2;
+	color: @teal;
+	font-size: 22px;
+}
+
+#custom-circle6 {
+	background: @surface1;
+	color: @surface2;
+	font-size: 22px;
+}
+
+#custom-updates,#disk,#clock,#pulseaudio {
+	padding: 0 10px;
+}
+
+#disk {
+	background: @surface2;
+}
+
+#disk.warning span {
+	color: @peach;
+}
+
+#disk.critical span {
+	color: @red;	
+}
+
+#custom-menu {
+	background: @teal;
+	color: @base;
+	font-size: 19px;
+	padding: 0 3px;
+	padding-left:4px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+	background: @surface2;
+	padding-right: 5px;
+}
+
+#pulseaudio {
+	border-radius: 0 20px 20px 0;
+	background: @surface1;
+	padding-right: 20px;
+	font-size: 18px;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#taskbar {
+	background: @surface0;
+	border-radius: 20px 0px 0 20px;
+	padding-left: 10px;
+}
+
+#taskbar button {
+	padding: 0 5px;
+}
+
+#tray {
+	background: @surface0;
+	padding: 0 8px;
 }
 
 #tray menu {
@@ -123,79 +151,37 @@ label:focus {
     background: @mantle;
 }
 
-#taskbar {
-	background: @surface0;
-	border-radius: 20px 0px 0 20px;
-	padding-left: 10px;
-}
-
-#taskbar button {
-	padding: 0 5px;
-}
-
-#custom-updates.updated,#pulseaudio,#clock,#disk,#custom-system-infos,#network,#custom-power {
-	color: @text;	
-}
-
-#clock {
-	background: @surface1;
-}
-
-#pulseaudio {
-	background: @surface1;
-}
-
-#pulseaudio.muted {
-    color: @red;
-	font-size: 20px;
-    padding: 0 19px;
-}
-
-#custom-updates {
-	background: @surface0;
-	border-radius: 20px 0px 0 20px;
-	font-size: 16px;
-	padding-left: 15px;
-}
-
-#custom-updates.has-updates {
-	color: @green;
-}
-
-#disk {
-	background: @surface0;
-	border-radius: 0 20px 20px 0;
-	padding-right: 15px;	
-}
-
-#disk.warning span {
-	color: @peach;
-}
-
-#disk.critical span {
-	color: @red;	
-}
-
-#custom-system-infos {
-	background: @surface0;
-	padding-left: 8px;
-	padding-right: 6px;
-}
-
 #network {
 	background: @surface0;
 	padding-left: 8px;
 	padding-right: 5px;
 }
 
-#custom-power {
-	background: @surface0;
-	font-size: 15px;
-	padding-left: 8px;
-	padding-right: 5px;
+tooltip {
+    background: @base;
+    border: 1px solid @surface1;
+    border-radius: 6px;
 }
 
-#workspaces,#custom-updates,#pulseaudio,#custom-menu,#clock,#disk,#custom-system-infos,#network,
-#custom-power {
+tooltip label {
+    color: @text;
+    margin: 4px;
+    padding: 4px;
+}
+
+label:focus {
+    background: @mantle;
+}
+
+#tray,#custom-updates,#custom-menu,#custom-circle3,#custom-circle4,#custom-circle5,#custom-circle6,#taskbar,
+#clock,#pulseaudio,#disk,#custom-system-infos,#network,#custom-power,#custom-media,#custom-kernel {
+	margin: 5px 0;
+}
+
+#custom-updates.updated,#pulseaudio,#clock,#disk,#network {
+	color: @text;	
+}
+
+#workspaces,#custom-updates,#pulseaudio,#clock,#disk,#network {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
