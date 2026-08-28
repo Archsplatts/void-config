@@ -12,13 +12,13 @@
 	"modules-center": [
 		"custom/updates",
 		"custom/circle3",
-		"pulseaudio",
+		"disk#ssd",		
 		"custom/circle4",
 		"custom/menu",
 		"custom/circle5",
 		"clock",
 		"custom/circle6",
-		"disk#ssd"],
+		"pulseaudio"],
 	
 	"modules-right": [
 		"wlr/taskbar",
