@@ -162,6 +162,7 @@ mkdir -p $HOME/.local/share/applications
 cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
+cp ~/void-config/zprofile ~/.zprofile
 cp -r ~/void-config/applications/* ~/.local/share/applications
 xdg-user-dirs-update
 chmod u+x ~/.config/mango/autostart.sh
