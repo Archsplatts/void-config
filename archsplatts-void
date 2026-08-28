@@ -164,6 +164,9 @@ cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
 cp ~/void-config/zshrc ~/.zshrc
 cp -r ~/void-config/applications/* ~/.local/share/applications
 xdg-user-dirs-update
+chmod u+x ~/.config/mango/autostart.sh
+chmod u+x ~/.config/mango/scripts/*
+chmod u+x ~/.config/mango/waybar/scripts/*
 chmod u+x ~/.config/rofi/scripts/*
 chmod u+x ~/.config/sway/scripts/*
 chmod u+x ~/.config/waybar/scripts/*
