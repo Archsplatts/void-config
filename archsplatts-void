@@ -34,7 +34,8 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 ESSENTIALS_PKGS=(
 	"autotiling" 
 	"chrony" 
-	"cliphist" 
+	"cliphist"
+	"cronie"
 	"dbus" 
 	"elogind" 
 	"foot"
