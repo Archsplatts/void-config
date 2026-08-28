@@ -60,6 +60,7 @@ ESSENTIALS_PKGS=(
 	"tumbler"
 	"ufw"
 	"Waybar"
+	"wl-clip-persist"
 	"wl-clipboard"
 	"xdg-desktop-portal"
 	"xdg-desktop-portal-gtk"
