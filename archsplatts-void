@@ -146,6 +146,7 @@ echo -e "${JAUNE}[6/8] Activation des services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo ln -s /etc/sv/chronyd /var/service
+sudo ln -s /etc/sv/cronie /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/NetworkManager /var/service
 sudo ln -s /etc/sv/ufw /var/service
