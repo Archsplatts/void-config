@@ -169,6 +169,7 @@ mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.local/share/applications
 cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
+sudo cp ~/void-config/018.png /usr/share/void-artwork/
 cp ~/void-config/zshrc ~/.zshrc
 cp ~/void-config/zprofile ~/.zprofile
 cp -r ~/void-config/applications/* ~/.local/share/applications
