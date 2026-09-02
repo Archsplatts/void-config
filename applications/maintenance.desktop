@@ -2,6 +2,6 @@
 Type=Application
 Name=Maintenance
 Icon=preferences-system-services
-Exec=/home/bloodsplatts/.scripts/maintenance-launch
+Exec=/home/$USER/.scripts/maintenance-launch
 Terminal=false
 Categories=System
