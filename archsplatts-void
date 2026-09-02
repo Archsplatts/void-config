@@ -165,8 +165,10 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 mkdir -p ~/.config
 mkdir -p ~/Images/Wallpapers
-mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.local/share/applications
+mkdir -p $HOME/.local/share/icons
+mkdir -p $HOME/.local/share/fonts
+mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.scripts
 cp -r ~/void-config/config/* ~/.config
 cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
