@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Maintenance
+Icon=preferences-system-services
+Exec=/home/bloodsplatts/.scripts/maintenance-launch
+Terminal=false
+Categories=System
