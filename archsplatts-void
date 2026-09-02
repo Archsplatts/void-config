@@ -170,21 +170,21 @@ mkdir -p $HOME/.local/share/icons
 mkdir -p $HOME/.local/share/fonts
 mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.scripts
-cp -r ~/void-config/config/* ~/.config
-cp  ~/void-config/sunken-tower.png ~/Images/Wallpapers
-sudo cp ~/void-config/018.png /usr/share/void-artwork/
-cp ~/void-config/zshrc ~/.zshrc
-cp ~/void-config/zprofile ~/.zprofile
-cp -r ~/void-config/applications/* ~/.local/share/applications
-cp -r ~/void-config/script/* ~/.scripts/
+cp -r $HOME/void-config/config/* $HOME/.config
+cp  $HOME/void-config/sunken-tower.png $HOME/Images/Wallpapers
+sudo cp $HOME/void-config/018.png /usr/share/void-artwork/
+cp $HOME/void-config/zshrc $HOME/.zshrc
+cp $HOME/void-config/zprofile $HOME/.zprofile
+cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
+cp -r $HOME/void-config/script/* $HOME/.scripts/
 xdg-user-dirs-update
-chmod u+x ~/.config/mango/autostart.sh
-chmod u+x ~/.config/mango/scripts/*
-chmod u+x ~/.config/mango/waybar/scripts/*
-chmod u+x ~/.config/rofi/scripts/*
-chmod u+x ~/.config/sway/scripts/*
-chmod u+x ~/.config/waybar/scripts/*
-chmod u+x ~/.scripts/*
+chmod u+x $HOME/.config/mango/autostart.sh
+chmod u+x $HOME/.config/mango/scripts/*
+chmod u+x $HOME/.config/mango/waybar/scripts/*
+chmod u+x $HOME/.config/rofi/scripts/*
+chmod u+x $HOME/.config/sway/scripts/*
+chmod u+x $HOME/.config/waybar/scripts/*
+chmod u+x $HOME/.scripts/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
