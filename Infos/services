@@ -1,0 +1,25 @@
+Service							Rôle
+
+agetty-tty1 / tty2 / tty3		Login sur 3 terminaux virtuels
+chronyd 						Synchronisation NTP
+cronie							Tâches programmées
+dbus							Communication inter-applications
+lact							Démon de contrôle GPU AMD (overclock, fans)
+nanoklogd						Logger kernel ultra-léger
+NetworkManager					Gestion réseau
+numlock							État du numlock
+socklog-unix					Daemon syslog du système
+udevd							Gestion des périphériques
+ufw								Pare-feu
+
+
+Application						Rôle
+
+cliphist						Presse-papiers
+gammastep						Filtre à lumière bleue
+mako							Notifications
+mangowc							Gestionnaire de fenêtres
+pipewire/wireplumber			Audio
+swaybg							Fond d'écran
+waybar							Panneau
+xfce-polkit						Agent d'authentification

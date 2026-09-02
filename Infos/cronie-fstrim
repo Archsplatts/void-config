@@ -1,0 +1,13 @@
+## Fstrim
+
+sudo xbps-install -Sy cronie
+
+sudo micro /etc/cron.weekly/fstrim
+
+#!/bin/sh
+
+fstrim /
+
+sudo chmod u+x /etc/cron.weekly/fstrim
+
+sudo ln -s /etc/sv/cronie /var/service/  
