@@ -26,7 +26,7 @@ alias ls="eza --icons -1 --group-directories-first"
 alias rm="trash -v"
 alias sv="ls /var/service"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias window="swaymsg -t get_tree"
+alias window="mmsg get all-clients | jq ."
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 ## History file for zsh
