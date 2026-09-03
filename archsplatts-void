@@ -49,10 +49,12 @@ ESSENTIALS_PKGS=(
 	"mesa-dri" 
 	"mesa-vulkan-radeon"
 	"NetworkManager"
+	"numlockx"
 	"qt5ct"
 	"qt5-styleplugins"
 	"qt6ct"
 	"rofi"
+	"sddm"
 	"slurp"
 	"socklog-void"
 	"sway" 
@@ -151,13 +153,14 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[6/8] Activation des services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo ln -s /etc/sv/chronyd /var/service
-sudo ln -s /etc/sv/cronie /var/service
-sudo ln -s /etc/sv/dbus /var/service
-sudo ln -s /etc/sv/nanoklogd /var/service
-sudo ln -s /etc/sv/NetworkManager /var/service
-sudo ln -s /etc/sv/socklog-unix /var/service
-sudo ln -s /etc/sv/ufw /var/service
+sudo ln -s /etc/sv/chronyd /var/service/
+sudo ln -s /etc/sv/cronie /var/service/
+sudo ln -s /etc/sv/dbus /var/service/
+sudo ln -s /etc/sv/nanoklogd /var/service/
+sudo ln -s /etc/sv/NetworkManager /var/service/
+sudo ln -s /etc/sv/sddm /var/service/
+sudo ln -s /etc/sv/socklog-unix /var/service/
+sudo ln -s /etc/sv/ufw /var/service/
 sudo ufw enable
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
