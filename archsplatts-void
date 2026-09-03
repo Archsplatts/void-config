@@ -75,6 +75,7 @@ ESSENTIALS_PKGS=(
 	"xdg-user-dirs"
 	"xfce-polkit"
 	"xmirror"
+	"xorg-minimal"
 	"xorg-server-xwayland"
 )
 
