@@ -115,6 +115,7 @@ UTILS_PKGS=(
 	"eza" 
 	"fastfetch" 
 	"git" 
+	"jq"
 	"micro" 
 	"noto-fonts-ttf"
 	"noto-fonts-emoji"
