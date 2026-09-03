@@ -1,22 +1,13 @@
-[Configuration système]
-
 ## NTSync
 sudo micro /etc/modules-load.d/ntsync.conf
 ntsync
 
 ## /etc/rc.conf
-
----
-
-[Gaming]
-
-## Flatpak
-discord
-mangohud
-proton-GE
-Steam 
-
-flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam
+HOSTNAME="void"
+HARDWARECLOCK="UTC"
+TIMEZONE="Europe/Paris"
+KEYMAP=fr
+FONT="ter-124b"
 
 ---
 
@@ -43,15 +34,18 @@ IPv6	2620:fe::fe, 2620:fe::9
 
 [Services]
 
-## Fstrim (dépend de cronie)
-
 sudo micro /etc/cron.weekly/fstrim
-
 #!/bin/sh
-
 fstrim /
 
 sudo chmod u+x /etc/cron.weekly/fstrim
+
+sudo micro /etc/cron.weekly/maintenance
+#!/bin/sh
+xbps-remove -yO || true
+vkpurge rm all || true 
+
+sudo chmod u+x /etc/cron.weekly/maintenance
 
 ## LACT
 
