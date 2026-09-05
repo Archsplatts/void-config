@@ -69,6 +69,13 @@ sudo sv status /var/service/lact
 
 ---
 
+[Dbus]
+
+/usr/share/wayland-sessions/mango.desktop
+Exec=dbus-run-session mango
+
+---
+
 [Theme]
 
 ## Kvantum, qt5ct, qt6ct
