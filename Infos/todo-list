@@ -15,10 +15,14 @@ FONT="ter-124b"
 
 /etc/default/grub
 
-GRUB_TIMEOUT=5
-GRUB_TIMEOUT_STYLE="menu"
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=0
+GRUB_TIMEOUT_STYLE="hidden"
+GRUB_DISTRIBUTOR="Void"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 amdgpu.ppfeaturemask=0xffffffff quiet splash"
+GRUB_GFXMODE=1920x1080x32
 GRUB_BACKGROUND=/usr/share/void-artwork/018.png
+
 
 sudo update-grub
 
