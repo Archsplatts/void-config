@@ -1,12 +1,12 @@
 {
    	"custom/updates": {
-    	"format": "{}{icon}",
+    	"format": "{icon}",
     	"return-type": "json",
     	"interval": 3600,
     	"signal": 10, 
     	"format-icons": {
-        	"has-updates": "\u00A0\u00A0",
-        	"updated": "\u00A0\u00A0"
+        	"has-updates": "\u00A0",
+        	"updated": ""
     },
     	"exec": "/home/bloodsplatts/.config/mango/waybar/scripts/checkupdates",
     	"on-click": "foot -e bash -c 'sudo xbps-install -Syu; echo; read -n 1 -s -p \"Appuyez sur une touche pour quitter...\"; pkill -SIGRTMIN+10 waybar'",
