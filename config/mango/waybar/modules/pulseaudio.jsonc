@@ -1,6 +1,6 @@
 {
 	"pulseaudio": {
-    	"format": "<span color='#a6e3a1'>{icon}</span> {volume}%",
+    	"format": "{icon}",
     	"format-bluetooth": "{icon}",
     	"format-muted": "\u00A0󰕿\u00A0",
     	"format-icons": {
