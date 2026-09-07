@@ -2,19 +2,20 @@ export BAT_THEME="Catppuccin Mocha"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 
-##   XBPS
-alias add="sudo xbps-install -Sy"
-alias clean="sudo xbps-remove -oO"
-alias del="sudo xbps-remove -R"
-alias info="xbps-query -R"
-alias search="xbps-query -Rs"
-alias update="sudo xbps-install -Syu"
-
-## Flatpak
+##   Flatpak
 alias fpi="flatpak install"
-alias fpd="flatpak uninstall"
+alias fpd="flatpak uninstall --delete-data"
+alias fpl="flatpak list"
+alias fpm="flatpak mask"
+alias fpo="flatpak uninstall --unused"
 alias fps="flatpak search"
 alias fpu="flatpak update"
+
+##   Système
+alias arch="/home/bloodsplatts/.config/mango/scripts/maintenance"
+alias svlist="ls /var/service"
+alias vkpl="vkpurge list"
+alias vkpr="sudo vkpurge rm all"
 
 ##   Utilitaires
 alias c="clear"
@@ -24,10 +25,19 @@ alias ff="fastfetch"
 alias fm="yazi"
 alias ls="eza --icons -1 --group-directories-first"
 alias rm="trash -v"
-alias sv="ls /var/service"
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias window="mmsg get all-clients | jq ."
+alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
+
+##   XBPS
+alias add="sudo xbps-install -Sy"
+alias clean="sudo xbps-remove -oO"
+alias del="sudo xbps-remove -R"
+alias info="xbps-query -R"
+alias list="xbps-query -m > $HOME/Infos/list"
+alias mun="xbps-install -Mun"
+alias search="xbps-query -Rs"
+alias update="sudo xbps-install -Syu"
 
 ## History file for zsh
 HISTFILE=~/.zsh_history
