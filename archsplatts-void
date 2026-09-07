@@ -185,7 +185,7 @@ sudo cp $HOME/void-config/018.png /usr/share/void-artwork/
 cp $HOME/void-config/zshrc $HOME/.zshrc
 cp $HOME/void-config/zprofile $HOME/.zprofile
 cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
-cp -r $HOME/void-config/script/* $HOME/.scripts/
+cp -r $HOME/void-config/scripts/* $HOME/.scripts/
 xdg-user-dirs-update
 chmod u+x $HOME/.config/mango/autostart.sh
 chmod u+x $HOME/.config/mango/scripts/*
