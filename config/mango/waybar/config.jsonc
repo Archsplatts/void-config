@@ -7,21 +7,17 @@
 	"spacing": 0,
 	"reload_style_on_change": true,
 	
-	"modules-left": ["ext/workspaces"],
+	"modules-left": [
+	"custom/menu", 
+	"ext/workspaces"],
 
 	"modules-center": [
-		"custom/updates",
-		"custom/circle3",
-		"disk#ssd",		
-		"custom/circle4",
-		"custom/menu",
-		"custom/circle5",
 		"clock",
-		"custom/circle6",
-		"pulseaudio"],
+		"custom/updates"],
 	
 	"modules-right": [
 		"wlr/taskbar",
 		"tray",
- 		"network"]
+		"pulseaudio",
+		"network"]
 }
