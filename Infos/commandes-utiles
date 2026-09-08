@@ -1,0 +1,28 @@
+##  
+# sv up <services>
+# sv down <services>
+# sv restart <services>
+# sv status <services>
+
+# ln -s /etc/sv/<service> /var/service/
+# rm /var/service/<service>
+
+## 󱊞 
+sudo dd bs=4M if=/chemin/vers/fichier.iso of=/chemin/vers/usb status=progress && sync
+
+## 󰓓  
+mangohud gamemoderun %command%
+
+## 
+Liste de toutes les fenêtres ouvertes			mmsg get all-clients
+
+## 
+/var/log/socklog
+svlogtail
+
+## 󱛟
+sudo e2label /dev/sda2 <nouveau_nom>
+sudo e2fsck -fy /dev/sdX   
+
+## 
+ffmpeg -i album.ape album.flac
