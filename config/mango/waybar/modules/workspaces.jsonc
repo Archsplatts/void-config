@@ -1,17 +1,13 @@
 {
 	"ext/workspaces": {
-	 	"num-tags": 5,
+	 	"num-tags": 3,
 	 	"format": "{icon}",
      	"format-icons": {
-        	"1": "",
-        	"2": "",
-        	"3": "",
-        	"4": "",
-        	"5": "",
-           	"active": "󰮯",
+        	"1": "1",
+        	"2": "2",
+        	"3": "3",
+           	"active": "󱓻",
         	"default": ""
      	}
 	}
 }	
-
-
