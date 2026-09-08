@@ -14,6 +14,8 @@ Fichiers (CLI) : Yazi
 
 Filtre à lumière bleue : Gammastep
 
+Gestionnaire de connexion : SDDM
+
 Gestionnaire de fenêtres : Mango
 
 Lanceur : Rofi
