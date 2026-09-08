@@ -1,4 +1,4 @@
-## Configuration mango pour Void Linux
+## Configuration mango pour Void Linux 
 
 Barre : Waybar
 
@@ -20,8 +20,10 @@ Lanceur : Rofi
 
 Notifications : Mako
 
-Shell : Zsh + Starship
+Shell : Zsh + Starship 
 
 Son : Pipewire + Wireplumber
 
 Terminal : Foot
+
+(Nécessite la police Ubuntu Mono Nerd)
