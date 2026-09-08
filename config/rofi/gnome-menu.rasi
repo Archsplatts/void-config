@@ -3,6 +3,9 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
+	sort:						true;
+    levenshtein-sort: 			false;
+    disable-history: 			true;
     display-drun:               "";
 	drun-display-format:        "{name}";
 	font: "UbuntuNerd Font Regular 12";
