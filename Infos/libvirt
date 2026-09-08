@@ -1,7 +1,0 @@
-## 
-
-sudo xbps-install -Sy gnome-boxes
-
-ln -s /etc/sv/libvirtd /var/service
-
-usermod -aG libvirt $USER
