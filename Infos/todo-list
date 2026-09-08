@@ -85,3 +85,11 @@ Exec=dbus-run-session mango
 ## Kvantum, qt5ct, qt6ct
 
 ## Thème GTK,curseur bibata
+
+## 
+
+sudo xbps-install -Sy gnome-boxes
+
+ln -s /etc/sv/libvirtd /var/service
+
+usermod -aG libvirt $USER
