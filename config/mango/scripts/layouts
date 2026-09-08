@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Afficher le menu et capturer la sélection
-selection=$(echo -e " Dwindle\n Tile\n Scroller\n Center Tile\n Vertical Tile\n Right Tile\n Vertical Scroller" | rofi -dmenu -config ~/.config/rofi/layouts.rasi)
+selection=$(echo -e " Dwindle\n Tile\n󰛺 Monocle\n Scroller\n Center Tile\n Vertical Tile\n Right Tile\n Vertical Scroller" | rofi -dmenu -config ~/.config/rofi/layouts.rasi)
 
 # Vérifier si une sélection a été faite
 if [[ -n "$selection" ]]; then
@@ -10,7 +10,7 @@ if [[ -n "$selection" ]]; then
     case "$selection" in
         " Dwindle") layout_name="dwindle" ;;
         " Tile") layout_name="tile" ;;
-        #"Monocle") layout_name="monocle" ;;
+        "󰛺 Monocle") layout_name="monocle" ;;
         #"Grid") layout_name="grid" ;;
         " Scroller") layout_name="scroller" ;;
         " Center Tile") layout_name="center_tile" ;;
