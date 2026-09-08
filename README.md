@@ -1,27 +1,27 @@
 ## Configuration mango pour Void Linux
 
-Barre :                     Waybar
+Barre : Waybar
 
-Captures :                  Flameshot
+Captures : Flameshot
 
-Contrôle du son :          Pavucontrol
+Contrôle du son : Pavucontrol
 
-Editeur de texte  :        Micro
+Editeur de texte  : Micro
 
-Fichiers :                 Thunar
+Fichiers : Thunar
 
-Fichier (CLI) :             Yazi
+Fichiers (CLI) : Yazi
 
-Filtre à lumière bleue :    Gammastep
+Filtre à lumière bleue : Gammastep
 
-Gestionnaire de fenêtres :  Mango
+Gestionnaire de fenêtres : Mango
 
-Lanceur :                   Rofi
+Lanceur : Rofi
 
-Notifications :            Mako
+Notifications : Mako
 
-Shell :                     Zsh + Starship
+Shell : Zsh + Starship
 
-Son :                      Pipewire + Wireplumber
+Son : Pipewire + Wireplumber
 
-Terminal :               Foot
+Terminal : Foot
