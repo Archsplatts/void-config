@@ -12,13 +12,12 @@ ProtonUp-Qt		net.davidotek.pupgui2
 
 Steam			com.valvesoftware.Steam 
 
-
-## Mangohud (activation globale)
-
-flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam   
-
-flatpak override --user --unset-env=MANGOHUD com.valvesoftware.Steam   
+# Ajouter le dépôt Flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Autoriser l'accès à .local/share/themes
-
 flatpak --user override --filesystem=xdg-data/themes:ro com.brave.Browser
+
+## Mangohud
+flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam   
+flatpak override --user --unset-env=MANGOHUD com.valvesoftware.Steam
