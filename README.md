@@ -26,4 +26,4 @@ Son : Pipewire + Wireplumber
 
 Terminal : Foot
 
-(Nécessite la police Ubuntu Mono Nerd)
+(Nécessite les polices Ubuntu Nerd & Ubuntu Mono Nerd)
