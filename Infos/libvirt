@@ -4,4 +4,4 @@ sudo xbps-install -Sy gnome-boxes
 
 ln -s /etc/sv/libvirtd /var/service
 
-usermod -aG libvirt bloodsplatts
+usermod -aG libvirt $USER
