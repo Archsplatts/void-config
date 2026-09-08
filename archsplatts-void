@@ -32,7 +32,6 @@ echo -e "${JAUNE}[2/8] Paquets essentiels${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 ESSENTIALS_PKGS=(
-	"autotiling" 
 	"chrony" 
 	"cliphist"
 	"cronie"
@@ -49,6 +48,7 @@ ESSENTIALS_PKGS=(
 	"libwebkit2gtk41"
 	"libwebkit2gtk41-devel"
 	"mako"
+	"mangowc"
 	"mesa-dri" 
 	"mesa-vulkan-radeon"
 	"NetworkManager"
@@ -62,7 +62,6 @@ ESSENTIALS_PKGS=(
 	"slurp"
 	"socklog-void"
 	"sox"
-	"sway" 
 	"swaybg"
 	"swayidle"
 	"swaylock" 
@@ -193,8 +192,6 @@ chmod u+x $HOME/.config/mango/autostart.sh
 chmod u+x $HOME/.config/mango/scripts/*
 chmod u+x $HOME/.config/mango/waybar/scripts/*
 chmod u+x $HOME/.config/rofi/scripts/*
-chmod u+x $HOME/.config/sway/scripts/*
-chmod u+x $HOME/.config/waybar/scripts/*
 chmod u+x $HOME/.scripts/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
