@@ -1,6 +1,10 @@
-## NTSync
+## NTSync, limits
 sudo micro /etc/modules-load.d/ntsync.conf
 ntsync
+
+/etc/security/limits.d/26-steam-nofile.conf
+*               hard    nofile             524288
+
 
 ## /etc/rc.conf
 HOSTNAME="void"
