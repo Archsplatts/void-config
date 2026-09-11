@@ -32,6 +32,7 @@ echo -e "${JAUNE}[2/8] Paquets essentiels${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 ESSENTIALS_PKGS=(
+	"alsa-pipewire"
 	"chrony" 
 	"cliphist"
 	"cronie"
@@ -53,6 +54,7 @@ ESSENTIALS_PKGS=(
 	"mesa-vulkan-radeon"
 	"NetworkManager"
 	"numlockx"
+	"pipewire"
 	"qt5ct"
 	"qt5-styleplugins"
 	"qt6ct"
@@ -70,6 +72,7 @@ ESSENTIALS_PKGS=(
 	"tumbler"
 	"ufw"
 	"Waybar"
+	"wireplumber"
 	"wl-clip-persist"
 	"wl-clipboard"
 	"xdg-desktop-portal"
@@ -151,7 +154,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[5/8] Configuration de pipewire${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo xbps-install -Sy pipewire alsa-pipewire wireplumber
 sudo mkdir -p /etc/alsa/conf.d
 sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
