@@ -1,0 +1,43 @@
+binds {
+	Mod+Return		{ spawn "foot"; }
+	Mod+E 			{ spawn "thunar"; }
+	Mod+D 			{ spawn "rofi" "-show" "drun" "-config" "/home/bloodsplatts/.config/rofi/gnome-menu.rasi"; }
+	Mod+W			{ spawn "foot" "-e" "micro"; }
+
+	Mod+Q			{ close-window; }
+	Mod+F 			{ fullscreen-window; }
+	Mod+Left  		{ focus-column-left; }
+	Mod+Right 		{ focus-column-right; }
+	Mod+Up    		{ focus-window-up; }
+	Mod+Down  		{ focus-window-down; }
+
+	Mod+Shift+Left  { swap-window-left; }
+	Mod+Shift+Right { swap-window-right; }
+	Mod+Shift+Up    { move-window-up; }
+	Mod+Shift+Down  { move-window-down; }
+
+	XF86HomePage 	{ spawn "flatpak" "run" "com.brave.Browser"; }
+	XF86Tools		{ spawn "lollypop"; }
+	XF86Mail		{ spawn "thunderbird"; }
+	XF86Messenger	{ spawn "flatpak" "run" "com.discordapp.Discord"; }
+	Print			{ spawn "flameshot" "gui"; }
+	XF86Calculator	{ spawn "galculator"; }
+	
+	Mod+I 			{ spawn "foot" "-e" "yazi" "/home/bloodsplatts/Infos" ; }
+	Mod+Shift+P 	{ spawn "pavucontrol" ; }
+	Mod+Shift+F 	{ spawn "foot" "--hold" "fastfetch" ; }
+	Mod+Shift+C 	{ spawn "foot" "-e" "calcurse"; }
+	Mod+N			{ spawn "nm-connection-editor"; }
+
+	Mod+A			{ spawn "~/.config/rofi/scripts/alarm-window"; }
+	Mod+P			{ spawn "~/.config/mango/scripts/powermenu"; }
+	Mod+G			{ spawn "~/.scripts/guitar"; }
+	Mod+C			{ spawn "~/.config/rofi/scripts/config-menu"; }
+	Mod+B			{ spawn "~/.config/rofi/scripts/web-menu"; }
+
+	Mod+Escape		{ spawn "foot" "-e" "btop"; }
+	Mod+Shift+R 	{ spawn "~/.scripts/reload"; }
+	Mod+U			{ spawn "~/.scripts/update"; }
+	Mod+M			{ spawn "~/.scripts/maintenance-launch"; }
+	Mod+Shift+V		{ spawn "~/.scripts/clip-wipe"; }
+}

@@ -1,0 +1,28 @@
+include "animations.kdl"
+include "binds.kdl"
+include "rules.kdl"
+
+input {
+    keyboard {
+        xkb {
+            layout "fr"
+        }
+    }
+	mod-key "Super"
+}
+
+output "HDMI-A-1" {
+	mode "1920x1080"
+	scale 1.0
+	position x=0 y=0
+}
+
+spawn-at-startup "pipewire"
+spawn-at-startup "wireplumber"
+spawn-at-startup "pipewire-pulse"
+spawn-at-startup "swaybg" "-i" "/home/bloodsplatts/Images/Wallpapers/nature-valley-1.jpg"
+spawn-at-startup "mako"
+spawn-at-startup "waybar"
+spawn-at-startup "/usr/libexec/xfce-polkit"
+spawn-at-startup "gammastep"
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
