@@ -38,7 +38,6 @@ ESSENTIALS_PKGS=(
 	"dbus" 
 	"elogind"
 	"flac"
-	"flacon"
 	"flatpak"
 	"foot"
 	"gammastep"
@@ -54,7 +53,6 @@ ESSENTIALS_PKGS=(
 	"mesa-vulkan-radeon"
 	"NetworkManager"
 	"numlockx"
-	"picard"
 	"qt5ct"
 	"qt5-styleplugins"
 	"qt6ct"
@@ -93,6 +91,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 APPS_PKGS=(
 	"firefox" 
+	"flacon"
 	"galculator" 
 	"gnome-disk-utility" 
 	"impression" 
@@ -101,6 +100,7 @@ APPS_PKGS=(
 	"network-manager-applet"
 	"nwg-look"
 	"pavucontrol" 
+	"picard"
 	"qbittorrent" 
 	"ristretto" 
 	"thunderbird" 
