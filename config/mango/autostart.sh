@@ -6,7 +6,7 @@ pipewire &
 wireplumber &
 pipewire-pulse &
 
-swaybg -i ~/Images/Wallpapers/nature-valley-1.jpg >/dev/null 2>&1 &
+swaybg -i ~/Images/Wallpapers/sunken-tower.png >/dev/null 2>&1 &
 
 mako >/dev/null 2>&1 &
 
