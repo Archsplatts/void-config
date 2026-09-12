@@ -32,7 +32,7 @@ listview {
 	border: 	0; 
 	columns:  	1;
 	flow: 		vertical;
-    lines:    	7;
+    lines:    	8;
 	scrollbar:	false;  
     spacing:  	14px;         
 }
