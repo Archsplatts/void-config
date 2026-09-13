@@ -19,5 +19,6 @@
 		"wlr/taskbar",
 		"tray",
 		"pulseaudio",
-		"network"]
+		"network",
+		"custom/power"]
 }
