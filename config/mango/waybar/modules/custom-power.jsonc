@@ -2,7 +2,7 @@
 	"custom/power": {
 		"format": "\u00A0",
 		"icon-size": 19,
-		"on-click": "$HOME/.config/rofi/scripts/powermenu",
+		"on-click": "$HOME/.config/mango/scripts/powermenu",
 		"tooltip": false
 	}
 }
