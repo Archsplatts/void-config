@@ -42,6 +42,7 @@ ESSENTIALS_PKGS=(
 	"flatpak"
 	"foot"
 	"gammastep"
+	"greetd"
 	"grim"
 	"gvfs" 
 	"kvantum"
@@ -53,13 +54,14 @@ ESSENTIALS_PKGS=(
 	"mesa-vaapi"
 	"mesa-vulkan-radeon"
 	"NetworkManager"
+	"nftables"
 	"numlockx"
 	"pipewire"
 	"qt5ct"
 	"qt5-styleplugins"
 	"qt6ct"
 	"rofi"
-	"sddm"
+	"runit-nftables"
 	"slurp"
 	"socklog-void"
 	"sox"
@@ -69,8 +71,8 @@ ESSENTIALS_PKGS=(
 	"Thunar" 
 	"thunar-archive-plugin" 
 	"thunar-volman"
+	"tui-greet"
 	"tumbler"
-	"ufw"
 	"Waybar"
 	"wireplumber"
 	"wl-clip-persist"
@@ -165,12 +167,11 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
+sudo ln -s /etc/sv/greetd /var/service/
+sudo ln -s /etc/sv/nftables /var/service/
 sudo ln -s /etc/sv/nanoklogd /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
-sudo ln -s /etc/sv/sddm /var/service/
 sudo ln -s /etc/sv/socklog-unix /var/service/
-sudo ln -s /etc/sv/ufw /var/service/
-sudo ufw enable
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
@@ -190,6 +191,7 @@ cp $HOME/void-config/zshrc $HOME/.zshrc
 cp $HOME/void-config/zprofile $HOME/.zprofile
 cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config/scripts/* $HOME/.scripts/
+sudo cp $HOME/void-config/nftables.conf /etc/
 xdg-user-dirs-update
 chmod u+x $HOME/.config/mango/autostart.sh
 chmod u+x $HOME/.config/mango/scripts/*
