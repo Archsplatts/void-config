@@ -15,6 +15,19 @@ FONT="ter-124b"
 
 ---
 
+[Greetd]
+
+/etc/greetd/config.toml
+
+[terminal]
+vt = 4
+
+[default_session]
+command = "tuigreet --time --remember --asterisks"
+user = "user"
+
+---
+
 [GRUB]
 
 /etc/default/grub
