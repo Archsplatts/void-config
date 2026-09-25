@@ -15,6 +15,15 @@ FONT="ter-124b"
 
 ---
 
+[Dhcpcd]
+
+/etc/dhcpcd.conf
+
+# DNS
+static domain_name_servers=9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
+
+---
+
 [Greetd]
 
 /etc/greetd/config.toml
