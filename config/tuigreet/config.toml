@@ -1,0 +1,55 @@
+[display]
+show_time = true
+greeting = "Bienvenue sur Void Linux!"
+align_greeting = "center"
+issue = false
+
+[layout]
+width = 60
+window_padding = 2
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "top"      # "top", "bottom", "default", "hidden"
+status_position = "bottom" # "top", "bottom", "default", "hidden"
+
+[remember]
+username = true
+session = false
+user_session = true
+
+[user_menu]
+enabled = true
+min_uid = 1000
+max_uid = 60000
+
+[secret]
+mode = "characters"  # "hidden" or "characters"
+characters = "*"
+
+[keybindings]
+command = 2     # F2
+sessions = 3    # F3
+background = 4  # F4
+power = 12      # F12
+
+[session]
+sessions_dirs = ["/usr/share/wayland-sessions", "/usr/share/xsessions"]
+xsessions_dirs = []
+environments = []
+
+[power]
+use_setsid = false
+
+[theme]
+border = "white"
+text = "white"
+time = "white"
+container = "black"
+title = "white"
+greet = "white"
+prompt = "white"
+input = "white"
+action = "white"
+button = "white"   
