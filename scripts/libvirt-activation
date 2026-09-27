@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -euo pipefail 
+
+VERT='\033[0;32m'
+JAUNE='\033[1;33m'
+NC='\033[0m'
+
+echo -e "${VERT}=== Script d'activation de libvirt ===${NC}"
+echo
+
+echo -e "${JAUNE}>>> Installation de gnome-boxes...${NC}"
+sudo xbps-install -Sy gnome-boxes
+echo
+
+echo -e "${JAUNE}>>> Activation des services...${NC}"
+sudo ln -s /etc/sv/libvirtd /var/service/
+echo
+
+echo -e "${VERT}=== Virtualisation activée ===${NC}"
+echo
