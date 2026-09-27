@@ -1,0 +1,62 @@
+##   
+
+loadkeys fr
+
+lsblk
+
+cfdisk /dev/sda
+1G EFI
+250G Linux Filesystem
+
+lsblk
+
+mkfs.ext4 /dev/sda2
+mkfs.fat -F 32 /dev/sda1
+
+mount /dev/sda2 /mnt/
+mkdir -p /mnt/boot/efi/  
+mount /dev/sda1 /mnt/boot/efi/
+
+lsblk
+
+xbps-install -Sy -R https://repo-default.voidlinux.org/current -r /mnt base-system
+
+xgenfstab -U /mnt > /mnt/etc/fstab
+
+xchroot /mnt /bin/bash
+
+xbps-install base-devel micro grub efibootmgr NetworkManager dbus xmirror
+
+xmirror
+
+dhcpcd eth0
+
+micro /etc/hostname
+
+micro /etc/rc.conf
+
+micro /etc/default/libc-locales
+
+xbps-reconfigure -f glibc-locales
+
+echo 'LANG=fr_FR.UTF-8' > /etc/locale.conf   
+
+passwd
+
+useradd -mG wheel user
+
+passwd bloodsplatts
+
+EDITOR=micro visudo
+
+xbps-install -S grub-x86_64-efi
+
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id="Void"
+
+grub-mkconfig -o /boot/grub/grub.cfg
+
+xbps-reconfigure -fa
+
+exit
+
+umount -R /mnt
