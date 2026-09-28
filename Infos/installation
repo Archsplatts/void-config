@@ -45,7 +45,7 @@ passwd
 
 useradd -mG wheel user
 
-passwd bloodsplatts
+passwd user
 
 EDITOR=micro visudo
 
