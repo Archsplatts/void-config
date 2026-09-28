@@ -1,12 +1,15 @@
-## NTSync, limits
+[NTSync]
+
 sudo micro /etc/modules-load.d/ntsync.conf
 ntsync
 
 /etc/security/limits.d/26-steam-nofile.conf
 *               hard    nofile             524288
 
+---
 
-## /etc/rc.conf
+[rc.conf ]
+
 HOSTNAME="void"
 HARDWARECLOCK="UTC"
 TIMEZONE="Europe/Paris"
@@ -111,7 +114,9 @@ Exec=dbus-run-session mango
 
 ## Thème GTK,curseur bibata
 
-## 
+---
+
+[Libvirt]
 
 sudo xbps-install -Sy gnome-boxes
 
