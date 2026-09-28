@@ -1,3 +1,0 @@
-sudo micro /etc/sv/agetty-tty1/conf
-
-GETTY_ARGS="--noclear -n -o <nom_utilisateur>"
