@@ -1,27 +1,7 @@
-[NTSync]
+[Dbus]
 
-sudo micro /etc/modules-load.d/ntsync.conf
-ntsync
-
-/etc/security/limits.d/26-steam-nofile.conf
-*               hard    nofile             524288
-
----
-
-[rc.conf ]
-
-HOSTNAME="void"
-HARDWARECLOCK="UTC"
-TIMEZONE="Europe/Paris"
-KEYMAP=fr
-FONT="ter-124b"
-
----
-
-[Nftables]
-
-sudo nft -f /etc/nftables.conf
-sudo nft list ruleset
+/usr/share/wayland-sessions/mango.desktop
+Exec=dbus-run-session mango
 
 ---
 
@@ -59,8 +39,44 @@ GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 amdgpu.ppfeaturemask=0xffffffff quiet spl
 GRUB_GFXMODE=1920x1080x32
 GRUB_BACKGROUND=/usr/share/void-artwork/018.png
 
-
 sudo update-grub
+
+---
+
+[Libvirt]
+
+sudo xbps-install -Sy gnome-boxes
+
+ln -s /etc/sv/libvirtd /var/service
+
+usermod -aG libvirt $USER
+
+---
+
+[Nftables]
+
+sudo nft -f /etc/nftables.conf
+sudo nft list ruleset
+
+---
+
+[NTSync]
+
+sudo micro /etc/modules-load.d/ntsync.conf
+ntsync
+
+/etc/security/limits.d/26-steam-nofile.conf
+*               hard    nofile             524288
+
+---
+
+[rc.conf ]
+
+HOSTNAME="void"
+HARDWARECLOCK="UTC"
+TIMEZONE="Europe/Paris"
+KEYMAP=fr
+FONT="ter-124b"
 
 ---
 
@@ -101,25 +117,7 @@ sudo sv status /var/service/lact
 
 ---
 
-[Dbus]
-
-/usr/share/wayland-sessions/mango.desktop
-Exec=dbus-run-session mango
-
----
-
 [Theme]
 
-## Kvantum, qt5ct, qt6ct
-
-## Thème GTK,curseur bibata
-
----
-
-[Libvirt]
-
-sudo xbps-install -Sy gnome-boxes
-
-ln -s /etc/sv/libvirtd /var/service
-
-usermod -aG libvirt $USER
+Kvantum, qt5ct, qt6ct
+Thème GTK,curseur bibata
