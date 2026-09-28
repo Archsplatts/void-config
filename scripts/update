@@ -1,2 +1,2 @@
-#!/bin/bash
-alacritty -e bash -c "sudo xbps-install -Syu; \$SHELL"
+#!/bin/sh
+foot -e sh -c "sudo xbps-install -Syu; \$SHELL"
