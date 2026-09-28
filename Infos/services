@@ -5,7 +5,7 @@ chronyd 						Synchronisation NTP
 cronie							Tâches programmées
 dbus							Communication inter-applications
 dhcpcd					        Gestion réseau
-greetd                        Gestionnaire de connexion
+greetd                          Gestionnaire de connexion
 lact							Démon de contrôle GPU AMD (overclock, fans)
 nanoklogd						Logger kernel ultra-léger
 nftables							Pare-feu
