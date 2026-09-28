@@ -8,7 +8,7 @@ dhcpcd					        Gestion réseau
 greetd                          Gestionnaire de connexion
 lact							Démon de contrôle GPU AMD (overclock, fans)
 nanoklogd						Logger kernel ultra-léger
-nftables							Pare-feu
+nftables						Pare-feu
 numlock							État du numlock
 socklog-unix					Daemon syslog du système
 udevd							Gestion des périphériques
