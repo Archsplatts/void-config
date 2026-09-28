@@ -1,2 +1,2 @@
-#!/bin/bash
-alacritty -e bash -c "sudo xmirror; \$SHELL"
+#!/bin/sh
+foot -e sh -c "sudo xmirror; \$SHELL"
