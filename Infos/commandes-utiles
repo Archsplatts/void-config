@@ -7,14 +7,21 @@
 # ln -s /etc/sv/<service> /var/service/
 # rm /var/service/<service>
 
+# Historique des installations
+xilog
+
 ## 󱊞 
 sudo dd bs=4M if=/chemin/vers/fichier.iso of=/chemin/vers/usb status=progress && sync
 
 ## 󰓓  
-mangohud gamemoderun %command%
+gamemoderun MANGOHUD=1 %command%
 
 ## 
-Liste de toutes les fenêtres ouvertes			mmsg get all-clients
+Liste de toutes les fenêtres ouvertes	
+alias window="mmsg get all-clients"
+
+Erreurs de config
+mango -p
 
 ## 
 /var/log/socklog
