@@ -22,7 +22,7 @@ if [[ -n "$selection" ]]; then
 			foot --hold yazi ~/.config/mango/waybar
 			;;
 		"󰤥  Réseau")
-			nm-connection-editor
+			foot -e micro /etc/dhcpcd.conf
 			;;
 		"  Son")
 			pavucontrol
