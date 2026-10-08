@@ -99,6 +99,7 @@ APPS_PKGS=(
 	"galculator" 
 	"gnome-disk-utility" 
 	"impression" 
+	"LACT"
 	"lollypop" 
 	"mpv" 
 	"nwg-look"
