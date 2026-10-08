@@ -53,7 +53,6 @@ ESSENTIALS_PKGS=(
 	"mesa-dri"
 	"mesa-vaapi"
 	"mesa-vulkan-radeon"
-	"NetworkManager"
 	"nftables"
 	"numlockx"
 	"pipewire"
@@ -102,7 +101,6 @@ APPS_PKGS=(
 	"impression" 
 	"lollypop" 
 	"mpv" 
-	"network-manager-applet"
 	"nwg-look"
 	"pavucontrol" 
 	"picard"
@@ -113,7 +111,6 @@ APPS_PKGS=(
 	"zathura"
 	"zathura-pdf-mupdf"	
 )
-
 
 sudo xbps-install -Sy "${APPS_PKGS[@]}"
 
