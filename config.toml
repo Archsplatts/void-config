@@ -1,0 +1,6 @@
+[terminal]
+vt = 4
+
+[default_session]
+command = "tuigreet --time --remember --asterisks"
+user = "bloodsplatts"
