@@ -167,7 +167,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
-sudo ln -s /etc/sv/dhcpcd /var/service/
 sudo ln -s /etc/sv/greetd /var/service/
 sudo ln -s /etc/sv/nftables /var/service/
 sudo ln -s /etc/sv/nanoklogd /var/service/
