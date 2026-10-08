@@ -1,6 +1,6 @@
 [Dbus]
 
-/usr/share/wayland-sessions/mango.desktop
+cp /usr/share/wayland-sessions/mango.desktop $HOME/.local/share/wayland-sessions/
 Exec=dbus-run-session mango
 
 ---
