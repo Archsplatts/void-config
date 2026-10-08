@@ -186,6 +186,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 mkdir -p $HOME/.config
 mkdir -p $HOME/Images/Wallpapers
+mkdir -p $HOME/Infos
 mkdir -p $HOME/.local/share/applications
 mkdir -p $HOME/.local/share/icons
 mkdir -p $HOME/.local/share/fonts
@@ -196,6 +197,7 @@ cp  $HOME/void-config/sunken-tower.png $HOME/Images/Wallpapers
 sudo cp $HOME/void-config/018.png /usr/share/void-artwork/
 cp $HOME/void-config/zshrc $HOME/.zshrc
 cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
+cp -r $HOME/void-config/Infos/* $HOME/Infos/
 cp -r $HOME/void-config/scripts/* $HOME/.scripts/
 sudo cp $HOME/void-config/nftables.conf /etc/
 xdg-user-dirs-update
