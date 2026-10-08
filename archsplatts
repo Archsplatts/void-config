@@ -89,6 +89,7 @@ ESSENTIALS_PKGS=(
 )
 
 sudo xbps-install -Sy "${ESSENTIALS_PKGS[@]}"
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[3/8] Installation des applications${NC}"
