@@ -45,6 +45,7 @@ ESSENTIALS_PKGS=(
 	"greetd"
 	"grim"
 	"gvfs" 
+	"gvfs-mtp"
 	"kvantum"
 	"libwebkit2gtk41"
 	"libwebkit2gtk41-devel"
