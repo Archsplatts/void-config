@@ -5,6 +5,6 @@
 	    "format-disconnected": "󰈂",
 	    "tooltip-format-ethernet": "Connecté",
 	    "tooltip-format-disconnected": "Deconnecté",
-	    "on-click": "nm-connection-editor"
+	    "on-click": "foot -e micro /etc/dhcpcd.conf"
 	}   
 }
