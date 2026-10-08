@@ -199,6 +199,7 @@ cp $HOME/void-config/zshrc $HOME/.zshrc
 cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config/Infos/* $HOME/Infos/
 cp -r $HOME/void-config/scripts/* $HOME/.scripts/
+sudo cp $HOME/void-config/config.toml /etc/greetd/
 sudo cp $HOME/void-config/nftables.conf /etc/
 xdg-user-dirs-update
 chmod u+x $HOME/.config/mango/autostart.sh
