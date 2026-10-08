@@ -1,0 +1,215 @@
+#!/bin/bash
+
+set -euo pipefail
+
+VERT='\033[0;32m'
+JAUNE='\033[1;33m'
+NC='\033[0m'
+
+echo -e "${VERT}                                   ▄▄                    ${NC}"
+echo -e "${VERT}                  █▄                ██       █▄  █▄      ${NC}"
+echo -e "${VERT}       ▄          ██                ██      ▄██▄▄██▄     ${NC}"
+echo -e "${VERT} ▄▀▀█▄ ████▄▄███▀ ████▄ ▄██▀█ ████▄ ██ ▄▀▀█▄ ██  ██ ▄██▀█${NC}"
+echo -e "${VERT} ▄█▀██ ██   ██    ██ ██ ▀███▄ ██ ██ ██ ▄█▀██ ██  ██ ▀███▄${NC}"
+echo -e "${VERT}▄▀█▄██▄█▀  ▄▀███▄▄██ ███▄▄██▀▄████▀▄██▄▀█▄██▄██ ▄███▄▄██▀${NC}"
+echo -e "${VERT}                              ██                         ${NC}"
+echo -e "${VERT}                              ▀                          ${NC}"
+
+echo -e "${JAUNE}Bienvenue dans le script de configuration Archsplatts Void Linux!${NC}\n"
+
+if [ -t 0 ]; then
+    read -p "Appuyez sur Entrée pour continuer... "
+fi 
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[1/8] Mise à jour du système${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo xbps-install -Syu
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[2/8] Paquets essentiels${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+ESSENTIALS_PKGS=(
+	"alsa-pipewire"
+	"chrony" 
+	"cliphist"
+	"cronie"
+	"dbus" 
+	"elogind"
+	"flac"
+	"flatpak"
+	"foot"
+	"gammastep"
+	"greetd"
+	"grim"
+	"gvfs" 
+	"kvantum"
+	"libwebkit2gtk41"
+	"libwebkit2gtk41-devel"
+	"mako"
+	"mangowc"
+	"mesa-dri"
+	"mesa-vaapi"
+	"mesa-vulkan-radeon"
+	"NetworkManager"
+	"nftables"
+	"numlockx"
+	"pipewire"
+	"qt5ct"
+	"qt5-styleplugins"
+	"qt6ct"
+	"rofi"
+	"runit-nftables"
+	"slurp"
+	"socklog-void"
+	"sox"
+	"swaybg"
+	"swayidle"
+	"swaylock" 
+	"Thunar" 
+	"thunar-archive-plugin" 
+	"thunar-volman"
+	"tui-greet"
+	"tumbler"
+	"Waybar"
+	"wireplumber"
+	"wl-clip-persist"
+	"wl-clipboard"
+	"xdg-desktop-portal"
+	"xdg-desktop-portal-gtk"
+	"xdg-desktop-portal-wlr"
+	"xdg-user-dirs"
+	"xfce-polkit"
+	"xmirror"
+	"xtools"
+	"xorg-minimal"
+	"xorg-server-xwayland"
+)
+
+sudo xbps-install -Sy "${ESSENTIALS_PKGS[@]}"
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[3/8] Installation des applications${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+APPS_PKGS=(
+	"firefox" 
+	"flacon"
+	"galculator" 
+	"gnome-disk-utility" 
+	"impression" 
+	"lollypop" 
+	"mpv" 
+	"network-manager-applet"
+	"nwg-look"
+	"pavucontrol" 
+	"picard"
+	"qbittorrent" 
+	"ristretto" 
+	"thunderbird" 
+	"timeshift" 
+	"zathura"
+	"zathura-pdf-mupdf"	
+)
+
+
+sudo xbps-install -Sy "${APPS_PKGS[@]}"
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[4/8] Installation des utilitaires${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+UTILS_PKGS=(
+	"bat" 
+	"btop" 
+	"calcurse"
+	"dust"
+	"eza" 
+	"fastfetch" 
+	"git" 
+	"jq"
+	"micro" 
+	"noto-fonts-ttf"
+	"noto-fonts-emoji"
+	"papirus-folders" 
+	"papirus-icon-theme" 
+   	"starship" 
+	"termdown" 
+	"terminus-font" 
+	"trash-cli"
+	"unzip"
+	"xarchiver"
+	"xz" 
+	"yazi" 
+	"zip" 
+	"zsh" 
+	"zsh-autosuggestions" 
+	"zsh-syntax-highlighting"	
+)
+
+sudo xbps-install -Sy "${UTILS_PKGS[@]}"
+sudo chsh -s /bin/zsh $USER
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[5/8] Configuration de pipewire${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo mkdir -p /etc/alsa/conf.d
+sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+   
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[6/8] Activation des services${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+sudo ln -s /etc/sv/chronyd /var/service/
+sudo ln -s /etc/sv/cronie /var/service/
+sudo ln -s /etc/sv/dbus /var/service/
+sudo ln -s /etc/sv/dhcpcd /var/service/
+sudo ln -s /etc/sv/greetd /var/service/
+sudo ln -s /etc/sv/nftables /var/service/
+sudo ln -s /etc/sv/nanoklogd /var/service/
+sudo ln -s /etc/sv/socklog-unix /var/service/
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[7/8] Copie des dotfiles${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+mkdir -p $HOME/.config
+mkdir -p $HOME/Images/Wallpapers
+mkdir -p $HOME/.local/share/applications
+mkdir -p $HOME/.local/share/icons
+mkdir -p $HOME/.local/share/fonts
+mkdir -p $HOME/.local/share/themes
+mkdir -p $HOME/.scripts
+cp -r $HOME/void-config/config/* $HOME/.config
+cp  $HOME/void-config/sunken-tower.png $HOME/Images/Wallpapers
+sudo cp $HOME/void-config/018.png /usr/share/void-artwork/
+cp $HOME/void-config/zshrc $HOME/.zshrc
+cp $HOME/void-config/zprofile $HOME/.zprofile
+cp -r $HOME/void-config/applications/* $HOME/.local/share/applications
+cp -r $HOME/void-config/scripts/* $HOME/.scripts/
+sudo cp $HOME/void-config/nftables.conf /etc/
+xdg-user-dirs-update
+chmod u+x $HOME/.config/mango/autostart.sh
+chmod u+x $HOME/.config/mango/scripts/*
+chmod u+x $HOME/.config/mango/waybar/scripts/*
+chmod u+x $HOME/.config/rofi/scripts/*
+chmod u+x $HOME/.scripts/*
+
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
+echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+git clone https://github.com/catppuccin/papirus-folders.git
+cd papirus-folders
+sudo cp -r src/* /usr/share/icons/Papirus
+papirus-folders -C cat-mocha-teal
+
+echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
+echo -e "${VERT}║  Installation terminée avec succès !   ║${NC}"
+echo -e "${VERT}╚════════════════════════════════════════╝${NC}\n"
+
+echo -e "${JAUNE}⚠ Veuillez redémarrer votre système pour appliquer tous les changements.${NC}\n"
