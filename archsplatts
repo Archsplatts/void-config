@@ -71,7 +71,7 @@ ESSENTIALS_PKGS=(
 	"Thunar" 
 	"thunar-archive-plugin" 
 	"thunar-volman"
-	"tui-greet"
+	"tuigreet"
 	"tumbler"
 	"Waybar"
 	"wireplumber"
