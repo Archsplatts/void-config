@@ -8,15 +8,14 @@
 	"reload_style_on_change": true,
 	
 	"modules-left": [
-	"custom/menu", 
-	"ext/workspaces"],
+		"ext/workspaces",
+		"wlr/taskbar"],
 
 	"modules-center": [
 		"clock",
 		"custom/updates"],
 	
 	"modules-right": [
-		"wlr/taskbar",
 		"tray",
 		"pulseaudio",
 		"network",
