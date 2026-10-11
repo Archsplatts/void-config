@@ -1,33 +1,33 @@
 #!/bin/bash
 
-options="VoidDocs\0icon\x1fvoid-logo-notext
-BraveSearch\0icon\x1fbrave
-Movix\0icon\x1fcom.github.artemanufrij.playmyvideos
+options="Ask Brave\0icon\x1fbrave
+Films\0icon\x1fphotofilmstrip
+Flathub\0icon\x1fapplication-vnd.flatpak
+Handbook\0icon\x1fvoid-logo-notext
 ProtonDB\0icon\x1fdistributor-logo-steamos
-Twitch\0icon\x1ftwitch-indicator
 Youtube\0icon\x1fyoutube"
 
 selection=$(echo -e "$options" | rofi -dmenu -show-icons -icon-theme "Papirus" -config ~/.config/rofi/web-menu.rasi)
 
 if [[ -n "$selection" ]]; then
     case "$selection" in
-		"VoidDocs")
-   			brave-origin-nightly https://docs.voidlinux.org/
-   			;;
-   		"BraveSearch")
-   		   	brave-origin-nightly https://search.brave.com 
+   		"Ask Brave")
+   		   	flatpak run com.brave.Browser https://search.brave.com/ask
    		   	;;  
-		"Movix")
-			firefox https://movix.bet
+		"Films")
+			flatpak run com.brave.Browser https://movix.bet
 			;;
+		"Flathub")
+			flatpak run com.brave.Browser https://flathub.org
+			;;
+		"Handbook")
+   			flatpak run com.brave.Browser https://docs.voidlinux.org/
+   			;;
         "ProtonDB")
-            brave-origin-nightly https://www.protondb.com
+            flatpak run com.brave.Browser https://www.protondb.com
             ;;
-		"Twitch")
-			firefox https://www.twitch.tv/directory
-            ;;
-        "Youtube")                    
-            brave-origin-nightly https://www.youtube.com
+      	"Youtube")                    
+            flatpak run com.brave.Browser https://www.youtube.com
             ;; 
     esac
 fi   
