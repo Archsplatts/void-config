@@ -2,7 +2,7 @@ export BAT_THEME="Catppuccin Mocha"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 
-##   Flatpak
+#   FLATPAK
 alias fpi="flatpak install"
 alias fpd="flatpak uninstall --delete-data"
 alias fpl="flatpak list"
@@ -11,14 +11,14 @@ alias fpo="flatpak uninstall --unused"
 alias fps="flatpak search"
 alias fpu="flatpak update"
 
-##   Système
+#   SYSTEM
 alias fw="sudo nft list ruleset"
 alias ls="eza --icons -1 --group-directories-first"
 alias rm="trash -v"
 alias svl="ls /var/service"
 alias xcr="xcheckrestart"
 
-##   Utilitaires
+#   UTILS
 alias c="clear"
 alias cdt="cd $HOME/Téléchargements"
 alias conf="yazi $HOME/.config"
@@ -30,7 +30,7 @@ alias window="mmsg get all-clients | jq ."
 alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
-##   XBPS
+#   XBPS
 alias add="sudo xbps-install -Sy"
 alias clean="sudo xbps-remove -oO && sudo vkpurge rm all"
 alias del="sudo xbps-remove -R"
