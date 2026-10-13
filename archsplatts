@@ -33,6 +33,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 ESSENTIALS_PKGS=(
 	"alsa-pipewire"
+	"alsa-utils"
 	"chrony" 
 	"cliphist"
 	"cronie"
