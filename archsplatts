@@ -61,6 +61,7 @@ ESSENTIALS_PKGS=(
 	"qt5-styleplugins"
 	"qt6ct"
 	"rofi"
+	"rtkit"
 	"runit-nftables"
 	"slurp"
 	"socklog-void"
