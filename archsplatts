@@ -125,7 +125,6 @@ echo -e "${JAUNE}[4/8] Installation des utilitaires${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 UTILS_PKGS=(
-	"android-tools"
 	"bat" 
 	"btop" 
 	"calcurse"
