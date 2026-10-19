@@ -8,8 +8,8 @@
         	"has-updates": "\u00A0",
         	"updated": ""
     },
-    	"exec": "/home/bloodsplatts/.config/mango/waybar/scripts/checkupdates",
-    	"on-click": "foot -e bash -c 'sudo xbps-install -Syu; echo; read -n 1 -s -p \"Appuyez sur une touche pour quitter...\"; pkill -SIGRTMIN+10 waybar'",
-    	"on-click-right": "pkill -SIGRTMIN+10 waybar"
+    	"exec": "$HOME/.scripts/checkupdates",
+    	"on-click": "$HOME/.scripts/update",
+    	"on-click-right": "$HOME/.scripts/reload"
 	}
 }	
