@@ -7,6 +7,9 @@
 # ln -s /etc/sv/<service> /var/service/
 # rm /var/service/<service>
 
+# 󰈀
+ip link show
+
 # Historique des installations
 xilog
 
