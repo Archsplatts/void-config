@@ -16,6 +16,7 @@ echo -e "${VERT}                              ██                         ${N
 echo -e "${VERT}                              ▀                          ${NC}"
 
 echo -e "${JAUNE}Bienvenue dans le script de configuration Archsplatts Void Linux!${NC}\n"
+echo -e "${JAUNE}Veuillez installer et activer le service dbus avant de continuer${NC}\n"
 
 if [ -t 0 ]; then
     read -p "Appuyez sur Entrée pour continuer... "
@@ -172,7 +173,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 sudo ln -sf /etc/sv/chronyd /var/service/
 sudo ln -sf /etc/sv/cronie /var/service/
-sudo ln -sf /etc/sv/dbus /var/service/
 sudo ln -sf /etc/sv/greetd /var/service/
 sudo ln -sf /etc/sv/nftables /var/service/
 sudo ln -sf /etc/sv/nanoklogd /var/service/
@@ -205,8 +205,6 @@ sudo cp $HOME/void-config/config.toml /etc/greetd/
 sudo cp $HOME/void-config/nftables.conf /etc/
 xdg-user-dirs-update
 chmod u+x $HOME/.config/mango/autostart.sh
-chmod u+x $HOME/.config/mango/scripts/*
-chmod u+x $HOME/.config/mango/waybar/scripts/*
 chmod u+x $HOME/.config/rofi/scripts/*
 chmod u+x $HOME/.scripts/*
 
