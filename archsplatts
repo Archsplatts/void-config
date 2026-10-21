@@ -59,6 +59,7 @@ ESSENTIALS_PKGS=(
 	"nftables"
 	"numlockx"
 	"pipewire"
+	"poppler"
 	"qt5ct"
 	"qt5-styleplugins"
 	"qt6ct"
