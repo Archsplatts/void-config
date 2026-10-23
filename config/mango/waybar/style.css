@@ -62,6 +62,7 @@ window#waybar {
 }
 
 #taskbar button {
+	color: @text;
 	padding: 0 5px;
 }
 
