@@ -1,0 +1,23 @@
+{
+	"include": ["$HOME/.config/mango/waybar/modules/*.jsonc"],
+
+	"layer": "top",
+	"position": "top",
+	"height": 32,
+	"spacing": 0,
+	"reload_style_on_change": true,
+	
+	"modules-left": [
+		"ext/workspaces",
+		"wlr/taskbar"],
+
+	"modules-center": [
+		"clock",
+		"custom/updates"],
+	
+	"modules-right": [
+		"tray",
+		"pulseaudio",
+		"network",
+		"custom/power"]
+}

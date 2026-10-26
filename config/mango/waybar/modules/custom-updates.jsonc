@@ -1,0 +1,15 @@
+{
+   	"custom/updates": {
+    	"format": "{icon}",
+    	"return-type": "json",
+    	"interval": 3600,
+    	"signal": 10, 
+    	"format-icons": {
+        	"has-updates": "\u00A0",
+        	"updated": ""
+    },
+    	"exec": "$HOME/.scripts/checkupdates",
+    	"on-click": "$HOME/.scripts/update",
+    	"on-click-right": "$HOME/.scripts/reload"
+	}
+}	
