@@ -1,5 +1,0 @@
-#!/bin/sh
-
-/home/bloodsplatts/Programmes/Soundshed/soundshed-guitar/soundshed-guitar &
-
-rhythmbox
