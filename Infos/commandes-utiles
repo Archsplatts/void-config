@@ -36,3 +36,8 @@ sudo e2fsck -fy /dev/sdX
 
 ## 
 ffmpeg -i album.ape album.flac
+
+## xdeb
+Copier le script dans /usr/local/bin/
+Convertir: xdeb -Sedf <paquet>.deb
+Installer: xbps-install -R ./binpkgs <nom>
