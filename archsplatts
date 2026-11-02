@@ -99,6 +99,7 @@ echo -e "${JAUNE}[3/8] Installation des applications${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 APPS_PKGS=(
+	"easytag"
 	"firefox" 
 	"flacon"
 	"galculator" 
@@ -111,7 +112,6 @@ APPS_PKGS=(
 	"nwg-look"
 	"octoxbps"
 	"pavucontrol" 
-	"picard"
 	"qbittorrent" 
 	"ristretto" 
 	"thunderbird" 
