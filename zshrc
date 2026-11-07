@@ -3,34 +3,6 @@ export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 XDEB_PKGROOT=${HOME}/.config/xdeb
 
-#   FLATPAK
-alias fpi="flatpak install"
-alias fpd="flatpak uninstall --delete-data"
-alias fpl="flatpak list"
-alias fpm="flatpak mask"
-alias fpo="flatpak uninstall --unused"
-alias fps="flatpak search"
-alias fpu="flatpak update"
-
-#   SYSTEM
-alias fw="sudo nft list ruleset"
-alias ls="eza --icons --group-directories-first"
-alias rm="trash -v"
-alias svl="ls /var/service"
-alias xcr="xcheckrestart"
-
-#   UTILS
-alias c="clear"
-alias cdt="cd $HOME/Téléchargements"
-alias conf="yazi $HOME/.config"
-alias ff="fastfetch"
-alias fm="yazi"
-alias vmon="$HOME/.scripts/libvirt-activation"
-alias vmoff="$HOME/.scripts/libvirt-desactivation"
-alias window="mmsg get all-clients | jq ."
-alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
-alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
-
 #   XBPS
 alias add="sudo xbps-install -Sy"
 alias clean="sudo xbps-remove -oO && sudo vkpurge rm all"
@@ -40,6 +12,29 @@ alias list="xbps-query -m > $HOME/Infos/list"
 alias mun="xbps-install -Mun"
 alias search="xbps-query -Rs"
 alias update="sudo xbps-install -Syu"
+
+#   UTILS
+alias c="clear"
+alias cdt="cd $HOME/Téléchargements"
+alias ff="fastfetch"
+alias fm="yazi"
+alias ls="eza --icons --group-directories-first"
+alias rm="trash -v"
+alias svl="ls /var/service"
+alias vmon="$HOME/.scripts/libvirt-activation"
+alias vmoff="$HOME/.scripts/libvirt-desactivation"
+alias window="mmsg get all-clients | jq ."
+alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
+alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
+
+#   FLATPAK
+alias fpi="flatpak install"
+alias fpd="flatpak uninstall --delete-data"
+alias fpl="flatpak list"
+alias fpm="flatpak mask"
+alias fpo="flatpak uninstall --unused"
+alias fps="flatpak search"
+alias fpu="flatpak update"
 
 ## History file for zsh
 HISTFILE=~/.zsh_history
