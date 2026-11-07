@@ -1,2 +1,0 @@
-#!/bin/sh
-foot -e sh -c "sudo xmirror; \$SHELL"
