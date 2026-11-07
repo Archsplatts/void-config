@@ -27,6 +27,10 @@ alias window="mmsg get all-clients | jq ."
 alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
+#   DOWNLOAD
+alias bdl="$HOME/.scripts/brave-release && cd $HOME/Téléchargements/"
+alias rdl="$HOME/.scripts/reaper-dl"
+
 #   FLATPAK
 alias fpi="flatpak install"
 alias fpd="flatpak uninstall --delete-data"
