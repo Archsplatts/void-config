@@ -20,12 +20,14 @@ alias ff="fastfetch"
 alias fm="yazi"
 alias ls="eza --icons --group-directories-first"
 alias rm="trash -v"
-alias svl="ls /var/service"
-alias vmon="$HOME/.scripts/libvirt-activation"
-alias vmoff="$HOME/.scripts/libvirt-desactivation"
 alias window="mmsg get all-clients | jq ."
 alias wipe="cliphist wipe && rm -r $HOME/.cache/cliphist/db"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
+
+#   SYSTEM
+alias svl="ls /var/service"
+alias vmon="$HOME/.scripts/libvirt-activation"
+alias vmoff="$HOME/.scripts/libvirt-desactivation"
 
 #   DOWNLOAD
 alias bdl="$HOME/.scripts/brave-release && cd $HOME/Téléchargements/"
