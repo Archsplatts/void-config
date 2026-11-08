@@ -34,22 +34,23 @@
             "keyColor": "green"
         },
         {
+            "type": "sound",
+            "key": "├─󰕾 ",
+            "keyColor": "green",
+            "format": "Air 192|4 Pro"
+        },
+        {
             "type": "display",
-            "key": "├─󱄄 ",
+            "key": "╰─󱄄 ",
             "keyColor": "green"
         },
+
         {
-            "type": "sound",
-            "key": "╰─󰕾 ",
-            "keyColor": "green",
-            "format": "Air 192 4 Pro"
-        },
-        {
-          "type": "custom",
-          "format": "\u001b[90m└────────────────────────────────────────────┘"
+         "type": "custom",
+         "format": "\u001b[90m└────────────────────────────────────────────┘"
         },
         "break",
- 		{
+ {
          "type": "custom",
          "format": "\u001b[90m┌────────────────────────────────────────────┐"
     	},	       
@@ -92,13 +93,13 @@
 			"type": "custom",
 			"key":"├─󱓟 ",
 			"keyColor": "blue",
-			"format": "Rofi 2.0.0"
+			"format": "Rofi"
 		},
 		{
 			"type": "custom",
 			"key":"╰─ ",
 			"keyColor": "blue",
-			"format": "Waybar 0.15.0"
+			"format": "Waybar"
 		},
 		{
 		 "type": "custom",
