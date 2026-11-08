@@ -16,6 +16,12 @@ window#waybar {
 	padding: 0 5px;	
 }
 
+#taskbar button {
+	color: @subtext1;
+	padding: 0 10px;
+	margin-left: 5px;
+}
+
 #workspaces button {
     background: transparent;
 	border-radius: 4px;
@@ -36,32 +42,12 @@ window#waybar {
     color: @red;
 }
 
-#clock {
-	padding: 0 5px;
-}
-
 #custom-updates {
 	padding: 0 5px;
 }
 
 #custom-updates.has-updates {
 	color: @green;
-}
-
-#pulseaudio {
-	font-size: 20px;
-	padding-left: 5px;
-	padding-right: 11px;
-}
-
-#pulseaudio.muted {
-    color: @red;
-}
-
-#taskbar button {
-	color: @subtext1;
-	padding: 0 10px;
-	margin-left: 5px;
 }
 
 #tray {
@@ -98,9 +84,23 @@ window#waybar {
     background: @mantle;
 }
 
+#pulseaudio {
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 11px;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
 #network {
 	padding-left: 6px;
 	padding-right: 4px;
+}
+
+#clock {
+	padding: 0 5px;
 }
 
 tooltip {
