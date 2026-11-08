@@ -7,13 +7,13 @@
     min-height: 0;
 }
 
+window#waybar {
+    background: rgba(30,30,46,1);
+}
+
 #layout {
 	color: @subtext1;
 	padding: 0 5px;	
-}
-
-window#waybar {
-    background: rgba(30,30,46,1);
 }
 
 #workspaces button {
