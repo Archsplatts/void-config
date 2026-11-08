@@ -1,13 +1,11 @@
 {
-	"ext/workspaces": {
-	 	"num-tags": 3,
+	"mango/workspaces": {
+	 	"tag-filter": [1, 2, 3],
 	 	"format": "{icon}",
      	"format-icons": {
-        	"1": "1",
-        	"2": "2",
-        	"3": "3",
-           	"active": "󱓻",
-        	"default": ""
+        	"1": "I",
+        	"2": "II",
+        	"3": "III",
      	}
 	}
 }	
