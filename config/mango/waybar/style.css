@@ -7,12 +7,13 @@
     min-height: 0;
 }
 
-window#waybar {
-    background: rgba(30,30,46,0.9);
+#layout {
+	color: @subtext1;
+	padding: 0 5px;	
 }
 
-#workspaces {
-	padding-right: 5px;
+window#waybar {
+    background: rgba(30,30,46,1);
 }
 
 #workspaces button {
@@ -33,10 +34,6 @@ window#waybar {
 #workspaces button.urgent {
     background: transparent;
     color: @red;
-}
-
-#custom-menu {
-	padding: 0 5px;
 }
 
 #clock {
@@ -62,8 +59,9 @@ window#waybar {
 }
 
 #taskbar button {
-	color: @text;
-	padding: 0 5px;
+	color: @subtext1;
+	padding: 0 10px;
+	margin-left: 5px;
 }
 
 #tray {
@@ -105,11 +103,6 @@ window#waybar {
 	padding-right: 4px;
 }
 
-#custom-power {
-	padding-left: 4px;
-	padding-right: 5px;
-}
-
 tooltip {
     background: @base;
     border: 1px solid @surface1;
@@ -126,15 +119,14 @@ label:focus {
     background: @mantle;
 }
 
-#workspaces,#custom-menu,#clock,#custom-updates,#pulseaudio,#taskbar,#tray,#network,
-#custom-power {
+#workspaces,#clock,#custom-updates,#pulseaudio,#taskbar,#tray,#network {
     background: transparent;
 }   
 
-#custom-updates.updated,#pulseaudio,#clock,#disk,#network,#custom-menu,#custom-power {
-	color: @text;	
+#custom-updates.updated,#pulseaudio,#clock,#network {
+	color: @subtext1;	
 }
 
-#workspaces,#custom-updates,#pulseaudio,#clock,#disk,#network,#custom-menu,#custom-power {
+#workspaces,#custom-updates,#pulseaudio,#clock,#network,#taskbar {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
