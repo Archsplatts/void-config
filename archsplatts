@@ -204,10 +204,14 @@ cp -r "$HOME/void-config/Infos"/* "$HOME/Documents/Infos/"
 cp -r "$HOME/void-config/scripts"/* "$HOME/.scripts/"
 sudo cp "$HOME/void-config/config.toml" "/etc/greetd/"
 sudo cp "$HOME/void-config/nftables.conf" "/etc/"
+sudo cp "$HOME/void-config/scripts/fstrim" "/etc/cron.weekly/"
+sudo cp "$HOME/void-config/scripts/maintenance" "/etc/cron.weekly/"
 xdg-user-dirs-update
 chmod u+x "$HOME/.config/mango/autostart.sh"
 chmod u+x "$HOME/.config/rofi/scripts"/*
 chmod u+x "$HOME/.scripts"/*
+sudo chmod u+x "/etc/cron.weekly/fstrim"
+sudo chmod u+x "/etc/cron.weekly/maintenance"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
