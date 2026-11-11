@@ -195,23 +195,26 @@ mkdir -p "$HOME/.local/share/themes"
 mkdir -p "$HOME/.scripts"
 mkdir -p "$HOME/Documents/Notes"
 mkdir -p "$HOME/Images/Wallpapers"
-cp  "$HOME/void-config/sunken-tower.png" "$HOME/Images/Wallpapers/"
-cp "$HOME/void-config/zshrc" "$HOME/.zshrc"
-cp -r "$HOME/void-config/config"/* "$HOME/.config/"
+
 cp -r "$HOME/void-config/applications"/* "$HOME/.local/share/applications/"
+cp -r "$HOME/void-config/config"/* "$HOME/.config/"
 cp -r "$HOME/void-config/Notes"/* "$HOME/Documents/Notes/"
 cp -r "$HOME/void-config/scripts"/* "$HOME/.scripts/"
+sudo cp "$HOME/void-config/scripts/fstrim" "/etc/cron.weekly/"
+sudo cp "$HOME/void-config/scripts/maintenance" "/etc/cron.weekly/"
 sudo cp "$HOME/void-config/018.png" "/usr/share/void-artwork/"
 sudo cp "$HOME/void-config/config.toml" "/etc/greetd/"
 sudo cp "$HOME/void-config/nftables.conf" "/etc/"
-sudo cp "$HOME/void-config/scripts/fstrim" "/etc/cron.weekly/"
-sudo cp "$HOME/void-config/scripts/maintenance" "/etc/cron.weekly/"
+cp  "$HOME/void-config/sunken-tower.png" "$HOME/Images/Wallpapers/"
+cp "$HOME/void-config/zshrc" "$HOME/.zshrc"
+
 xdg-user-dirs-update
+
+sudo chmod u+x "/etc/cron.weekly/fstrim"
+sudo chmod u+x "/etc/cron.weekly/maintenance"
 chmod u+x "$HOME/.config/mango/autostart.sh"
 chmod u+x "$HOME/.config/rofi/scripts"/*
 chmod u+x "$HOME/.scripts"/*
-sudo chmod u+x "/etc/cron.weekly/fstrim"
-sudo chmod u+x "/etc/cron.weekly/maintenance"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[8/8] Catppuccin papirus folders${NC}"
@@ -221,6 +224,7 @@ git clone https://github.com/catppuccin/papirus-folders.git
 cd papirus-folders
 sudo cp -r src/* /usr/share/icons/Papirus
 papirus-folders -C cat-mocha-teal
+
 rm -rf "$HOME/void-config"
 
 echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
