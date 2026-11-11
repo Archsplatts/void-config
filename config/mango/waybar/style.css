@@ -11,17 +11,6 @@ window#waybar {
     background: rgba(30,30,46,1);
 }
 
-#layout {
-	color: @subtext1;
-	padding: 0 5px;	
-}
-
-#taskbar button {
-	color: @subtext1;
-	padding: 0 10px;
-	margin-left: 5px;
-}
-
 #workspaces button {
     background: transparent;
 	border-radius: 4px;
@@ -32,9 +21,16 @@ window#waybar {
     padding-right: 5px;
 }
 
-#workspaces button.active {
-	background: transparent;
-    color: @teal;
+#workspaces button:nth-child(1).active {
+	color: @teal;
+}
+
+#workspaces button:nth-child(2).active {
+	color: @lavender;
+}
+
+#workspaces button:nth-child(3).active {
+	color: @blue;
 }
 
 #workspaces button.urgent {
