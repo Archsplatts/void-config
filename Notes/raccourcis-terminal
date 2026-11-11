@@ -1,0 +1,14 @@
+## 
+
+Ctrl + A ou Cmd + ← : Place le curseur au début de la ligne.
+Ctrl + E ou Cmd + → : Place le curseur à la fin de la ligne.
+Alt + B ou Option + ←: Déplace le curseur d'un mot en arrière.
+Alt + F ou Option + →: Déplace le curseur d'un mot en avant.
+Ctrl + B : Déplace le curseur d'un caractère en arrière (équivalent à la flèche gauche).
+Ctrl + F : Déplace le curseur d'un caractère en avant (équivalent à la flèche droite).
+Ctrl + U : Coupe tout ce qui se trouve avant le curseur et le place dans le presse-papiers.
+Ctrl + K : Coupe tout ce qui se trouve après le curseur et le place dans le presse-papiers.
+Ctrl + W : Supprime le mot situé juste avant le curseur.
+Ctrl + Y : Colle le texte précédemment coupé avec Ctrl + U, Ctrl + K, ou Ctrl + W.
+Ctrl + L : Efface l'écran et repositionne le curseur en haut, similaire à la commande clear.
+Ctrl + T : Échange (transpose) les deux caractères situés juste avant le curseur.
