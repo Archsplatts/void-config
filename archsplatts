@@ -205,6 +205,7 @@ sudo cp "$HOME/void-config/scripts/maintenance" "/etc/cron.weekly/"
 sudo cp "$HOME/void-config/018.png" "/usr/share/void-artwork/"
 sudo cp "$HOME/void-config/config.toml" "/etc/greetd/"
 sudo cp "$HOME/void-config/nftables.conf" "/etc/"
+sudo nft -f /etc/nftables.conf
 cp  "$HOME/void-config/sunken-tower.png" "$HOME/Images/Wallpapers/"
 cp "$HOME/void-config/zshrc" "$HOME/.zshrc"
 
