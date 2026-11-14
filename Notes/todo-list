@@ -1,22 +1,18 @@
-[Dbus]
+# ─── DBUS ───────────────────────────────────────────────────────────────────
 
-cp /usr/share/wayland-sessions/mango.desktop $HOME/.local/share/wayland-sessions/
+sudo micro /usr/share/wayland-sessions/mango.desktop
 Exec=dbus-run-session mango
 
----
+# ─── DHCPCD ─────────────────────────────────────────────────────────────────
 
-[Dhcpcd]
-
-/etc/dhcpcd.conf
+sudo micro /etc/dhcpcd.conf
 
 # DNS
 static domain_name_servers=9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
 
----
+# ─── GREETD ─────────────────────────────────────────────────────────────────
 
-[Greetd]
-
-/etc/greetd/config.toml
+sudo micro /etc/greetd/config.toml
 
 [terminal]
 vt = 4
@@ -25,11 +21,9 @@ vt = 4
 command = "tuigreet --time --remember --asterisks"
 user = "user"
 
----
+# ─── GRUB ───────────────────────────────────────────────────────────────────
 
-[GRUB]
-
-/etc/default/grub
+sudo micro /etc/default/grub
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
@@ -41,36 +35,15 @@ GRUB_BACKGROUND=/usr/share/void-artwork/018.png
 
 sudo update-grub
 
----
-
-[Libvirt]
-
-sudo xbps-install -Sy gnome-boxes
-
-ln -s /etc/sv/libvirtd /var/service
-
-usermod -aG libvirt $USER
-
----
-
-[Nftables]
-
-sudo nft -f /etc/nftables.conf
-sudo nft list ruleset
-
----
-
-[NTSync]
+# ─── NTSYNC ─────────────────────────────────────────────────────────────────
 
 sudo micro /etc/modules-load.d/ntsync.conf
 ntsync
 
-/etc/security/limits.d/26-steam-nofile.conf
+sudo micro /etc/security/limits.d/26-steam-nofile.conf
 *               hard    nofile             524288
 
----
-
-[rc.conf ]
+# ─── RC.CONF ────────────────────────────────────────────────────────────────
 
 HOSTNAME="void"
 HARDWARECLOCK="UTC"
@@ -78,11 +51,7 @@ TIMEZONE="Europe/Paris"
 KEYMAP=fr
 FONT="ter-124b"
 
----
-
-[Services]
-
-## LACT
+# ─── LACT ───────────────────────────────────────────────────────────────────
 
 # Créer le service
 sudo mkdir -p /etc/sv/lact
@@ -102,9 +71,7 @@ sudo ln -s /etc/sv/lact /var/service/
 # Vérifier
 sudo sv status /var/service/lact
 
----
-
-[Theme]
+# ─── THEME ───────────────────────────────────────────────────────────────────
 
 Kvantum, qt5ct, qt6ct
 Thème GTK,curseur bibata
