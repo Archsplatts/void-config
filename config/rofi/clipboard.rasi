@@ -50,7 +50,6 @@ inputbar {
     background-color: @base;
     border-radius: 8px;
     children: [ prompt, entry ];
-    enabled: true;
     padding: 8px 16px;
     spacing: 8px;
 }
