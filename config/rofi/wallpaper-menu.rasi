@@ -46,7 +46,6 @@ element selected.normal {
 element-icon {
     background-color: transparent;
     cursor: inherit;
-    padding: 0px 0px 0px 0px;
     size: 420px;
     text-color: inherit;
 }
@@ -115,7 +114,6 @@ mainbox {
     border-color: @selected;
     border-radius: 0px 0px 0px 0px;
     children: [ "inputbar", "listview" ];
-    margin: 0px;
     padding: 42px;
     spacing: 20px;
 }
