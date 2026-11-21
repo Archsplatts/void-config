@@ -127,11 +127,9 @@ textbox-prompt-colon {
 }
 
 window {
-    anchor: center;
     background-color: rgba(30,30,46,0.80);
     border: 0px solid;
     cursor: "default";
     fullscreen: true;
-    location: center;
     transparency: "real";
 }   
