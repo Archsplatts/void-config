@@ -27,7 +27,6 @@ element {
     border-color: @selected;
     border-radius: 8px;
     cursor: pointer;
-    margin: 0px;
     orientation: vertical;
     padding: 30px 10px;
     spacing: 20px;
@@ -88,8 +87,6 @@ inputbar {
     border-color: @selected;
     border-radius: 0px;
     children: [ "prompt", "entry" ];
-    margin: 0px;
-    padding: 0px;
     spacing: 20px;
     text-color: @foreground;
 }
@@ -107,11 +104,8 @@ listview {
     fixed-height: true;
     layout: vertical;
     lines: 1;
-    margin: 0px;
-    padding: 0px;
     reverse: false;
     scrollbar: false;
-    spacing: 0px;
     text-color: @foreground;
 }
 
@@ -156,18 +150,11 @@ textbox-prompt-colon {
 }
 
 window {
-    anchor: center;
     background-color: @background;
     border: 3px;
     border-color: @selected;
     border-radius: 8px;
     cursor: "default";
-    fullscreen: false;
-    location: center;
-    margin: 0px;
-    padding: 0px;
     transparency: "real";
     width: 80%;
-    x-offset: 0px;
-    y-offset: 0px;
 }   
