@@ -1,2 +1,2 @@
-#!/bin/bash
-foot sh -c "sudo xbps-install -Su; echo; read -n 1 -s -p \"Appuyez sur une touche pour quitter...\"; pkill -SIGRTMIN+10 waybar"
+#!/bin/sh
+foot sh -c "sudo xbps-install -Syu; pkill -SIGRTMIN+10 waybar; \$SHELL"
