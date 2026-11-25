@@ -11,38 +11,38 @@
         {
             "type": "host",
             "key": "╭─󰌢 ",
-            "keyColor": "green"
+            "keyColor": "blue"
         },
         {
             "type": "cpu",
             "key": "├─ ",
-            "keyColor": "green"
+            "keyColor": "blue"
         },
         {
             "type": "gpu",
             "key": "├─ ",
-            "keyColor": "green"
+            "keyColor": "blue"
         },
 		{
 		    "type": "memory",
 		    "key": "├─ ",
-		    "keyColor": "green"
+		    "keyColor": "blue"
 		},
         {
             "type": "disk",
             "key": "├─󰋊 ",
-            "keyColor": "green"
+            "keyColor": "blue"
         },
         {
             "type": "sound",
             "key": "├─󰕾 ",
-            "keyColor": "green",
+            "keyColor": "blue",
             "format": "Air 192|4 Pro"
         },
         {
             "type": "display",
             "key": "╰─󱄄 ",
-            "keyColor": "green"
+            "keyColor": "blue"
         },
 
         {
@@ -57,48 +57,48 @@
 		{
 		    "type": "os",
 		    "key": "╭─ ", 
-		    "keyColor": "blue",
+		    "keyColor": "green",
 		    "format": "Void"
 		    
 		},
 		{
 		    "type": "kernel",
 		    "key": "├─ ",
-		    "keyColor": "blue"
+		    "keyColor": "green"
 		},
 		{
 		    "type": "packages",
 		    "key": "├─󰏖 ",
-		    "keyColor": "blue"
+		    "keyColor": "green"
 		},
 		{
 		    "type": "terminal",
 		    "key": "├─ ",
-		    "keyColor": "blue",
+		    "keyColor": "green",
 		    "format": "Foot"
 		},
 		{
 		    "type": "custom",
 		    "key": "├─ ",
-		    "keyColor": "blue",
+		    "keyColor": "green",
 		    "format": "Zsh"
 		},
 		{
 		    "type": "wm",
-		    "key": "├─ ",
-		    "keyColor": "blue",
-		    "format": "Mango 0.18.3"
+		    "key": "├─ ",
+		    "keyColor": "green",
+		    "format": "Mango"
 		},
 		{
 			"type": "custom",
 			"key":"├─󱓟 ",
-			"keyColor": "blue",
+			"keyColor": "green",
 			"format": "Rofi"
 		},
 		{
 			"type": "custom",
 			"key":"╰─ ",
-			"keyColor": "blue",
+			"keyColor": "green",
 			"format": "Waybar"
 		},
 		{
