@@ -5,3 +5,4 @@ Icon=preferences-system-services
 Exec=/home/$USER/.scripts/maintenance-launch
 Terminal=false
 Categories=System
+Hidden=true
