@@ -5,3 +5,4 @@ Exec=/home/$USER/.scripts/xmirror
 Icon=xsi-software-update-available-symbolic
 Type=Application
 Categories=System
+Hidden=true
